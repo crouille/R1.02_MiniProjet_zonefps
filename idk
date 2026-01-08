@@ -4,13 +4,14 @@
     <title>Proto html</title>
 </head>
 <body>
-    <aside>
+    <nav>
         <ul>
             <li><a href="#">MENU</a></li>
             <li><a href="#">Liste des jeux</a></li>
             <li><a href="#">selection du jeux</a></li>
             <li><a href="#">Catégorie</a></li>
         </ul>
-    </aside>
+    </nav>
 </body>
 </html>
+
