@@ -45,29 +45,37 @@ aside{
 	}
 }
 footer{
-	display: flex;
-	justify-content: center;
+	display: grid;
+	grid-template-columns: auto 1fr auto;
 	align-items: center;
+	gap: 15px;
+	padding: 15px;
     position:fixed;
 	left: 0;
 	bottom: 0;
 	width: 100%;
-	height: 7vh;
+	height: 5vh;
 	color: white;
-	/*background-color: #00096F;*/
 	background-color: #253356;
-	.social-list{
-		padding-right: 10px;
-		color: white;
-		align-items: center;
-		margin: 5px;
-	}
-	a{
-		text-decoration:none;
-	}
-	h4{
-		margin: 2px;
-	}
+}
+footer .social-list{
+	display:inline-flex;
+	inline-size: 22px;
+	gap: 10px;
+	color: white;
+	align-items: center;
+	margin: 5px;
+}
+footer p{
+	justify-self: center;
+	margin: 0;
+	text-align: center;
+}
+footer a{
+	text-decoration:none;
+}
+h4{
+	margin: 2px;
 }
 .nav-button {
 	box-shadow:inset 0px 1px 0px 0px #ffffff;
@@ -98,4 +106,7 @@ footer{
 	font-weight:bold;
 	padding:6px 6px;
 	text-decoration:none;
+}
+svg{
+	fill: white;
 }
