@@ -1,0 +1,91 @@
+<html lang ="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>selection de jeu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form>
+        <label for="prenom">Prénom :</label>
+        <input type="text" id="prenom" name="prenom" placeholder="Entrez votre prénom...">
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" placeholder="Entrez votre nom...">
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" placeholder="Entrez votre email...">
+        <input type="submit" value="Envoyer">
+    </form>
+
+    
+      <!-- Titre principal de la page -->
+    <h1>Questionnaire de préférences FPS</h1>
+
+    <!-- 
+        Formulaire HTML :
+        Il permet de récupérer les choix de l’utilisateur.
+        Aucun traitement dynamique n’est effectué ici.
+    -->
+    <form>
+
+        <!-- Section : expérience FPS -->
+        <h2>Votre expérience avec les FPS</h2>
+
+        <!-- 
+            Boutons radio :
+            - même name => un seul choix possible
+            - "checked" garantit une valeur par défaut
+        -->
+        <input type="radio" name="experience" id="debutant" checked>
+        <label for="debutant">Aucune expérience</label><br>
+
+        <input type="radio" name="experience" id="intermediaire">
+        <label for="intermediaire">Quelques jeux joués</label><br>
+
+        <input type="radio" name="experience" id="expert">
+        <label for="expert">Joueur régulier</label><br>
+
+        <!-- Section : préférences de gameplay -->
+        <h2>Préférences de gameplay</h2>
+
+        <!-- 
+            Checkbox :
+            - plusieurs choix possibles
+            - utilisées comme déclencheurs CSS
+        -->
+        <input type="checkbox" id="mouvement">
+        <label for="mouvement">Mouvement rapide</label><br>
+
+        <input type="checkbox" id="precision">
+        <label for="precision">Précision / visée</label><br>
+
+        <input type="checkbox" id="realiste">
+        <label for="realiste">Gameplay réaliste</label><br>
+
+        <!-- Section résultats -->
+        <h2>Jeux recommandés</h2>
+
+        <!-- 
+            Conteneur des résultats.
+            Les jeux sont masqués par défaut via CSS.
+        -->
+        <div class="resultats">
+
+            <div class="jeu titanfall">
+                <h3>Titanfall 2</h3>
+                <p>Mouvement avancé, multijoueur dynamique</p>
+            </div>
+
+            <div class="jeu doom">
+                <h3>DOOM Eternal</h3>
+                <p>Campagne solo, précision et action rapide</p>
+            </div>
+
+            <div class="jeu cod">
+                <h3>Call of Duty Cold War</h3>
+                <p>FPS réaliste, multijoueur et solo</p>
+            </div>
+
+        </div>
+
+    </form>
+
+</body>
