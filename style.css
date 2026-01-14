@@ -1,6 +1,7 @@
 @font-face {
         font-family: 'Bahnschrift';
-        src: url('fonts/Bahnschrift.woff2') format('woff2'),
+        src: url('assets/fonts/Bahnschrift.ttf') format('truetype'),
+                url('fonts/Bahnschrift.woff2') format('woff2'),
                 url('fonts/Bahnschrift.woff') format('woff');
         font-weight: normal;
         font-style: normal;
@@ -104,8 +105,6 @@ footer {
 }
 
 .main-button {
-        /*box-shadow:inset 0px 1px 0px 0px #ffffff;*/
-        /*background:linear-gradient(to bottom, #2f45b7 5%, #2f45b7 100%);*/
         background-color: #2f45b7;
         border-radius: 6px;
         border: 1px solid #dcdcdc;
