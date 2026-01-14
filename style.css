@@ -56,18 +56,18 @@ footer{
 	color: white;
 	/*background-color: #00096F;*/
 	background-color: #253356;
-	.social-list{
-		padding-right: 10px;
-		color: white;
-		align-items: center;
-		margin: 5px;
-	}
-	a{
-		text-decoration:none;
-	}
-	h4{
-		margin: 2px;
-	}
+}
+footer .social-list{
+	padding-right: 10px;
+	color: white;
+	align-items: center;
+	margin: 5px;
+}
+footer a{
+	text-decoration:none;
+}
+h4{
+	margin: 2px;
 }
 .nav-button {
 	box-shadow:inset 0px 1px 0px 0px #ffffff;
@@ -98,4 +98,7 @@ footer{
 	font-weight:bold;
 	padding:6px 6px;
 	text-decoration:none;
+}
+svg{
+	fill: white;
 }
