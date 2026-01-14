@@ -1,101 +1,120 @@
 @font-face {
-    font-family: 'Bahnschrift';
-    src: url('fonts/Bahnschrift.woff2') format('woff2'),
-         url('fonts/Bahnschrift.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+        font-family: 'Bahnschrift';
+        src: url('fonts/Bahnschrift.woff2') format('woff2'),
+                url('fonts/Bahnschrift.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
 }
 
-body{
-	font-family: 'Bahnschrift', 'Segoe UI', sans-serif;
-    padding: 0px;
-    margin: 0px;
+@font-face {
+        font-family: 'NeuropolX';
+        src: local('fonts/NeuropolX.otf') format('otf');
+        font-weight: normal;
+        font-size: normal;
 }
-header{
-    display: flex;
-    justify-content: space-between;
-	align-items: center;
-    position:static;
-    padding:5px;
-    height: 6vh;
-    max-height: 70px;
-	padding: 1rem;
-	background-color: white;
-	ul{
-		list-style-type: none;
-		display: flex;
-		justify-content: space-around;
-		li{
-			padding: 5px;
-		}
-	}
+
+body {
+        font-family: 'Bahnschrift', 'Segoe UI', sans-serif;
+        padding: 0px;
+        margin: 0px;
 }
-aside{
-	background-color: #253356;
-	/*background-color: #00096F;*/
-	max-width: 20%;
-	ul{
-		list-style-type: none;
-		margin: 10px;
-		padding: 10px;
-		a{
-			color: white;
-			text-decoration: none;
-		}
-	}
+
+header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: static;
+        padding: 5px;
+        height: 6vh;
+        max-height: 70px;
+        padding: 1rem;
+        background-color: white;
+
+        ul {
+                list-style-type: none;
+                display: flex;
+                justify-content: space-around;
+
+                li {
+                        padding: 5px;
+                }
+        }
 }
-footer{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-    position:fixed;
-	left: 0;
-	bottom: 0;
-	width: 100%;
-	height: 7vh;
-	color: white;
-	/*background-color: #00096F;*/
-	background-color: #253356;
-	.social-list{
-		padding-right: 10px;
-		color: white;
-		align-items: center;
-		margin: 5px;
-	}
-	a{
-		text-decoration:none;
-	}
-	h4{
-		margin: 2px;
-	}
+
+aside {
+        background-color: #253356;
+        /*background-color: #00096F;*/
+        max-width: 20%;
+
+        ul {
+                list-style-type: none;
+                margin: 10px;
+                padding: 10px;
+
+                a {
+                        color: white;
+                        text-decoration: none;
+                }
+        }
 }
+
+footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 7vh;
+        color: white;
+        /*background-color: #00096F;*/
+        background-color: #253356;
+
+        .social-list {
+                padding-right: 10px;
+                color: white;
+                align-items: center;
+                margin: 5px;
+        }
+
+        a {
+                text-decoration: none;
+        }
+
+        h4 {
+                margin: 2px;
+        }
+}
+
 .nav-button {
-	box-shadow:inset 0px 1px 0px 0px #ffffff;
-	background:linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
-	background-color:#f9f9f9;
-	border-radius:6px;
-	border:1px solid #dcdcdc;
-	display:inline-block;
-	cursor:pointer;
-	color:#666666;
-	font-size:15px;
-	font-weight:bold;
-	padding:6px 6px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #ffffff;
+        box-shadow: inset 0px 1px 0px 0px #ffffff;
+        background: #ffffff;
+        border-radius: 6px;
+        border: 0px solid #dcdcdc;
+        display: inline-block;
+        cursor: pointer;
+        color: #666666;
+        font-family: 'NeuropolX', 'Bahnschrift', 'Segoe UI', sans-serif;
+        font-size: 15px;
+        font-weight: bold;
+        padding: 6px 6px;
+        text-decoration: none;
+        text-shadow: 0px 1px 0px #ffffff;
 }
+
 .main-button {
-	/*box-shadow:inset 0px 1px 0px 0px #ffffff;*/
-	/*background:linear-gradient(to bottom, #2f45b7 5%, #2f45b7 100%);*/
-	background-color:#2f45b7;
-	border-radius:6px;
-	border:1px solid #dcdcdc;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family: 'Bahnschrift', 'Segoe UI', sans-serif;
-	font-size:15px;
-	font-weight:bold;
-	padding:6px 6px;
-	text-decoration:none;
+        /*box-shadow:inset 0px 1px 0px 0px #ffffff;*/
+        /*background:linear-gradient(to bottom, #2f45b7 5%, #2f45b7 100%);*/
+        background-color: #2f45b7;
+        border-radius: 6px;
+        border: 1px solid #dcdcdc;
+        display: inline-block;
+        cursor: pointer;
+        color: #ffffff;
+        font-family: 'Bahnschrift', 'Segoe UI', sans-serif;
+        font-size: 15px;
+        font-weight: bold;
+        padding: 6px 6px;
+        text-decoration: none;
 }
