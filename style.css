@@ -80,11 +80,12 @@ footer{
 	left: 0;
 	bottom: 0;
 	position: fixed;
-	width: 100%;
+	width: 100vw;
 	height: 5vh;
 	color: white;
 	background-color: #253356;
 }
+
 footer .social-list{
 	display:inline-flex;
 	inline-size: 22px;
@@ -162,7 +163,7 @@ main{
 
 #liste-jeu-area {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 25%);
     width: 100vw;
     gap: 20px;
     padding: 20px;
@@ -183,8 +184,8 @@ main{
 }
 
 .colonne2 {
-	gap : 20px;
-	margin-left: 20%;
-	padding: 20px;
+    margin-left: 20%;     /* même largeur que l’aside */
+    width: 80%;           /* prend tout l’espace restant */
+    padding: 20px;
+    box-sizing: border-box;
 }
-
