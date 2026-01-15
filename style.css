@@ -18,6 +18,8 @@ body {
         font-family: 'Bahnschrift', 'Segoe UI', sans-serif;
         padding: 0px;
         margin: 0px;
+		/*display: grid;
+		grid-template-columns: 25% 3fr;*/
 }
 
 header {
@@ -40,35 +42,50 @@ header li {
         padding: 5px;
 }
 aside {
-        background-color: #253356;
-        /*background-color: #00096F;*/
-        max-width: 20%;
-
-        ul {
-                list-style-type: none;
-                margin: 10px;
-                padding: 10px;
-
-                a {
-                        color: white;
-                        text-decoration: none;
-                }
-        }
+    background-color: #253356;
+    max-width: 20%;
+	height: 89vh;
+	position: fixed;
+	left: 0;
 }
+aside ul {
+	list-style-type: none;
+	padding: 10px;
+	margin: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+aside .nav-button {
+	margin: 10px 0;
+}
+
+footer ul {
+	list-style-type: none;
+	margin: 10px;
+	padding: 10px;
+}
+
+footer a {
+	color: white;
+	text-decoration: none;
+}
+
 footer{
 	display: grid;
 	grid-template-columns: auto 1fr auto;
 	align-items: center;
 	gap: 15px;
 	padding: 15px;
-        position:fixed;
 	left: 0;
 	bottom: 0;
-	width: 100%;
+	position: fixed;
+	width: 100vw;
 	height: 5vh;
 	color: white;
 	background-color: #253356;
 }
+
 footer .social-list{
 	display:inline-flex;
 	inline-size: 22px;
@@ -131,23 +148,23 @@ main{
 }
 
 /* Formulaire masqué par défaut */
-/*.formulaire {
+.formulaire {
     display: none;
     margin-top: 20px;
     padding: 20px;
     border: 1px solid #ccc;
     background-color: #f5f5f5;
-}*/
+}
 
 /* Affichage après clic */
-/*#formulaire:target {
+#formulaire:target {
     display: block;
-}*/
+}
 
 #liste-jeu-area {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    width: 100vw;
+    width: 75vw;
     gap: 20px;
     padding: 20px;
     box-sizing: border-box;
@@ -164,4 +181,11 @@ main{
     width: 100%;
     height: auto;
     border-radius: 8px;
+}
+
+.colonne2 {
+    margin-left: 20%;     /* même largeur que l’aside */
+    width: 80%;           /* prend tout l’espace restant */
+    padding: 20px;
+    box-sizing: border-box;
 }
