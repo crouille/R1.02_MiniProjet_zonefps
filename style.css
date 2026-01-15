@@ -18,10 +18,8 @@ body {
         font-family: 'Bahnschrift', 'Segoe UI', sans-serif;
         padding: 0px;
         margin: 0px;
-		/*display: grid;
-		grid-template-columns: 25% 3fr;*/
+        height: 100%;
 }
-
 header {
         display: flex;
         justify-content: space-between;
@@ -41,9 +39,24 @@ header ul {
 header li {
         padding: 5px;
 }
+.eval-form{
+        background-color: #cecece68;
+        padding: 12px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+}
+.eval-form-fieldset{
+        padding: 20px;
+}
+.eval-form-legend{
+        color:#DF3F3F;
+        font-weight:bold 
+}
 aside {
-    background-color: #253356;
-    max-width: 20%;
+        background-color: #253356;
+        max-width: 20%;
 	height: 89vh;
 	position: fixed;
 	left: 0;
@@ -140,9 +153,11 @@ main{
         margin: 0;
         padding: 0;
 }
-.eval h3{
+.eval-main{
+        max-height: 80vh;
+}
+.no-margin{
         margin: 0;
-        padding-top: 10px;
 }
 .full-height{
 	height: 81vh;
