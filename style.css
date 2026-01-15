@@ -118,20 +118,31 @@ h4{
         padding: 10px 24px;
         text-decoration: none;
 }
+main{
+        margin: 0;
+        padding: 0;
+}
+.eval h3{
+        margin: 0;
+        padding-top: 10px;
+}
+.full-height{
+	height: 89vh;
+}
 
 /* Formulaire masqué par défaut */
-.formulaire {
+/*.formulaire {
     display: none;
     margin-top: 20px;
     padding: 20px;
     border: 1px solid #ccc;
     background-color: #f5f5f5;
-}
+}*/
 
 /* Affichage après clic */
-#formulaire:target {
+/*#formulaire:target {
     display: block;
-}
+}*/
 
 #liste-jeu-area {
     display: grid;
