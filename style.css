@@ -76,6 +76,7 @@ footer{
 	grid-template-columns: auto 1fr auto;
 	align-items: center;
 	gap: 15px;
+        margin: 0;
 	padding: 15px;
 	left: 0;
 	bottom: 0;
@@ -144,9 +145,13 @@ main{
         padding-top: 10px;
 }
 .full-height{
-	height: 89vh;
+	height: 81vh;
 }
-
+.full-width{
+        margin: 0;
+        padding-left: 10vw;
+        padding-right: 10vw;
+}
 /* Formulaire masqué par défaut */
 .formulaire {
     display: none;
