@@ -136,3 +136,24 @@ h4{
     display: block;
 }
 
+#liste-jeu-area {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100vw;
+    gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#liste-jeu-area article {
+    background-color: #f5f5f5;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#liste-jeu-area img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}

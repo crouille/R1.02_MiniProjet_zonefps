@@ -20,14 +20,16 @@
         </ul>
     </nav>
     </header>
-    <nav>  
-    <ul>
-        <h1><li><a href="#./selection_de_jeu.html" class="nav-button">MENU</a></li></h1>
-        <li><a href="#liste-jeu-area" class="nav-button">Liste des jeux</a></li>
-        <li><a href="#selection-du-jeu-area" class="nav-button">selection du jeux</a></li>
-        <li><a href="#categorie-area" class="nav-button">Catégorie</a></li>
-    </ul>
-    </nav>
+    <aside class="side-nav">
+        <nav>  
+        <ul>
+            <h1><li><a href="#./selection_de_jeu.html" class="nav-button">MENU</a></li></h1>
+            <li><a href="#liste-jeu-area" class="nav-button">Liste des jeux</a></li>
+            <li><a href="#selection-du-jeu-area" class="nav-button">selection du jeux</a></li>
+            <li><a href="#categorie-area" class="nav-button">Catégorie</a></li>
+        </ul>
+        </nav>
+    </aside>
     <main>  
         <h1>Selection de jeu</h1>
         <a href="#formulaire" class="nav-button">Sélectionner un jeu</a>
@@ -75,25 +77,62 @@
     </section>
         <h2>Liste des jeux recommandés</h2>
 
-        <img src="assets/img/Titanfall2.jpg" alt="Titanfall 2">
-        <li>TITANFALL 2 (2016)</li>
-        <li>Jeu multjoueur</li>
-        <li>Mouvement avancé</li>
-        <li>Bonne visée</li>
-        <li>Campagne solo</li>
-        <img src="assets/img/DOOMEternal.jpg" alt="DOOM ETERNAL">
-        <li>DOOM ETERNAL (2020)</li>
-        <li>Mouvement avancé</li>
-        <li>Bonne visée</li>
-        <li>Campagne solo avancée</li>
-        <li>Jeu multjoueur peu développer</li>
-        <img src="assets/img/CODColdW.jpg" alt="CALL OF DUTY Black Ops COLD WAR">
-        <li>CALL OF DUTY Black Ops COLD WAR (2020)</li>
-        <li>Jeu multjoueur</li>
-        <li>Bonne visée</li>
-        <li>Mouvement plus réel</li>
-        <li>Campagne solo</li>
-        <li>Mode sans fin</li>
+        <!--section id="liste-jeu-area" class="liste-jeu-area">
+            <img src="assets/img/Titanfall2.jpg" alt="Titanfall 2"> <br>
+            TITANFALL 2 (2016) <br>
+            Jeu multjoueur <br>Mouvement avancé <br>Bonne visée <br>Campagne solo<br>
+            <img src="assets/img/DOOMEternal.jpg" alt="DOOM ETERNAL"> <br>
+            DOOM ETERNAL (2020) <br>
+            Mouvement avancé <br>Bonne visée <br>Campagne solo avancée <br>Jeu multjoueur peu développer<br>
+            <img src="assets/img/CODColdW.jpg" alt="CALL OF DUTY Black Ops COLD WAR"> <br>
+            CALL OF DUTY Black Ops COLD WAR (2020) <br>
+            Jeu multjoueur <br>Bonne visée <br>Mouvement plus réel <br>Campagne solo <br>Mode sans fin</li>
+        </section-->
+        <section id="liste-jeu-area" class="liste-jeu-area">
+
+        <article class="jeu">
+            <img src="assets/img/Titanfall2.jpg" alt="Titanfall 2">
+            <h3>TITANFALL 2 (2016)</h3>
+            <p>
+                Jeu multijoueur<br>
+                Mouvement avancé<br>
+                Bonne visée<br>
+                Campagne solo
+            </p>
+            <button formaction="https://www.instant-gaming.com/fr/rechercher/?q=Titanfall2" class="nav-button">
+                Achetez Titanfall 2
+            </button>
+        </article>
+        <article class="jeu">
+            <img src="assets/img/DOOMEternal.jpg" alt="DOOM Eternal">
+            <h3>DOOM ETERNAL (2020)</h3>
+            <p>
+                Mouvement avancé<br>
+                Bonne visée<br>
+                Campagne solo avancée<br>
+                Multijoueur peu développé
+            </p>
+            <button formaction="https://www.instant-gaming.com/fr/7664-acheter-doom-eternal-pc-jeu-steam/" class="nav-button">
+                Achetez DOOM Eternal
+            </button>
+        </article>
+
+        <article class="jeu">
+            <img src="assets/img/CODColdW.jpg" alt="Call of Duty Cold War">
+            <h3>CALL OF DUTY Cold War (2020)</h3>
+            <p>
+                Jeu multijoueur<br>
+                Bonne visée<br>
+                Mouvement réaliste<br>
+                Campagne solo<br>
+                Mode sans fin
+            </p>
+            <button formaction="https://www.instant-gaming.com/fr/rechercher/?query=Call+of+Duty+Black+Ops+Cold+War" class="nav-button">
+                Achetez Cold War
+            </button>
+        </article>
+    </section>
+    <br><br><br><br>
     </main>
     <footer>
         <logo class="social-list">
