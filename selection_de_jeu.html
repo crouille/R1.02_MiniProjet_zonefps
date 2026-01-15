@@ -5,90 +5,133 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="color-bg">
-        <logo class="main-logo">
-                <a href="#"><img src="./assets/logos/image.png" alt="Logo" height="60px"></a>
-        </logo>
-        <nav class="main-nav">
-                <!--button onclick="toggleList()"><img src="icon_menu_white.png" height="40px"></button-->
-                <ul id="responsive-list">
-                        <li><a href="./index.html" class="nav-button" target="_blank">Accueil</a></li>
-                        <li><a href="./selection_de_jeu.html" class="nav-button" target="_blank">Jeu</a></li>
-                        <li><a href="./statistiques.html" class="nav-button" target="_blank">Statistiques</a></li>
-                        <li><a href="./evaluation.html" class="nav-button" target="_blank">Évaluation</a></li>
-                        <li><a href="" class="main-button">Connexion</a></li>
-                </ul>
-        </nav>
+    <header class="color-bg">   
+    <logo class="main-logo">
+        <a href="#"><img src="./assets/logos/image.png" alt="Logo" height="60px"></a>
+    </logo>
+    <nav class="main-nav">
+        <!--button onclick="toggleList()"><img src="icon_menu_white.png" height="40px"></button-->
+        <ul id="responsive-list">
+            <li><a href="./index.html" class="nav-button" target="_blank">Accueil</a></li>
+            <li><a href="./selection_de_jeu.html" class="nav-button" target="_blank">Jeu</a></li>
+            <li><a href="./statistiques.html" class="nav-button" target="_blank">Statistiques</a></li>
+            <li><a href="./evaluation.html" class="nav-button" target="_blank">Évaluation</a></li>
+            <li><a href="" class="main-button">Connexion</a></li>
+        </ul>
+    </nav>
     </header>
-     <nav>
+    <aside class="side-nav full-height">
+        <nav>  
         <ul>
             <h1><li><a href="#./selection_de_jeu.html" class="nav-button">MENU</a></li></h1>
             <li><a href="#liste-jeu-area" class="nav-button">Liste des jeux</a></li>
             <li><a href="#selection-du-jeu-area" class="nav-button">selection du jeux</a></li>
             <li><a href="#categorie-area" class="nav-button">Catégorie</a></li>
         </ul>
-    </nav>
-    <main>
+        </nav>
+    </aside>
+    <main class="full-height">
         <h1>Selection de jeu</h1>
         <a href="#formulaire" class="nav-button">Sélectionner un jeu</a>
         <section id="formulaire" class="formulaire">
-
     <h2>Questionnaire de préférences FPS</h2>
-
     <form>
+
+        <label for="prenom">Prénom :</label>
+        <input type="text" id="prenom" name="prenom" placeholder="Entrez votre prénom..."><br>
+        <br>
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" placeholder="Entrez votre nom..."><br>
+        <br>
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" placeholder="Entrez votre email...">
+        <br>
 
         <h3>Expérience FPS</h3>
         <label><input type="radio" name="xp" required> Débutant</label><br>
         <label><input type="radio" name="xp"> Intermédiaire</label><br>
         <label><input type="radio" name="xp"> Expérimenté</label><br>
 
-        <h3>Gameplay recherché</h3>
-        <label><input type="checkbox"> Mouvement rapide</label><br>
-        <label><input type="checkbox"> Bonne visée</label><br>
-        <label><input type="checkbox"> Gameplay réaliste</label><br>
+            <h3>Gameplay recherché</h3>
+            <label><input type="checkbox"> Mouvement rapide</label><br>
+            <label><input type="checkbox"> Bonne visée</label><br>
+            <label><input type="checkbox"> Gameplay réaliste</label><br>
+            <input type="submit" value="Envoyer"><br>
 
-        <h3>Choisis ton jeu</h3>
+            <h3>Choisis ton jeu</h3>
 
-        <!-- Boutons de redirection -->
-        <button formaction="https://fr.wikipedia.org/wiki/Titanfall_2" class="nav-button">
-            Titanfall 2
-        </button>
+            <!-- Boutons de redirection -->
+            <button formaction="https://fr.wikipedia.org/wiki/Titanfall_2" class="nav-button">
+                Titanfall 2
+            </button>
 
-        <button formaction="https://fr.wikipedia.org/wiki/Doom_Eternal" class="nav-button">
-            DOOM Eternal
-        </button>
+            <button formaction="https://fr.wikipedia.org/wiki/Doom_Eternal" class="nav-button">
+                DOOM Eternal
+            </button>
 
-        <button formaction="https://fr.wikipedia.org/wiki/Call_of_Duty:_Black_Ops_Cold_War" class="nav-button">
-            Call of Duty Cold War
-        </button>
-
-    </form>
-
-</section>
+            <button formaction="https://fr.wikipedia.org/wiki/Call_of_Duty:_Black_Ops_Cold_War" class="nav-button">
+                Call of Duty Cold War
+            </button>
+        </form>
+    </section>
         <h2>Liste des jeux recommandés</h2>
 
-        <img src="assets/img/Titanfall2.jpg" alt="Titanfall 2">
-        <li>TITANFALL 2 (2016)</li>
-        <li>Jeu multjoueur
-            Mouvement avancé
-            Bonne visée
-            Campagne solo
-        </li>
-        <img src="assets/img/DOOMEternal.jpg" alt="DOOM ETERNAL">
-        <li>DOOM ETERNAL (2020)</li>
-        <li>Mouvement avancé
-            Bonne visée
-            Campagne solo avancée
-            Jeu multjoueur peu développer
-        </li>
-        <img src="assets/img/CODColdW.jpg" alt="CALL OF DUTY Black Ops COLD WAR">
-        <li>CALL OF DUTY Black Ops COLD WAR (2020)</li>
-        <li>Jeu multjoueur
-            Bonne visée
-            Mouvement plus réel
-            Campagne solo
-            Mode sans fin
-        </li>
+        <!--section id="liste-jeu-area" class="liste-jeu-area">
+            <img src="assets/img/Titanfall2.jpg" alt="Titanfall 2"> <br>
+            TITANFALL 2 (2016) <br>
+            Jeu multjoueur <br>Mouvement avancé <br>Bonne visée <br>Campagne solo<br>
+            <img src="assets/img/DOOMEternal.jpg" alt="DOOM ETERNAL"> <br>
+            DOOM ETERNAL (2020) <br>
+            Mouvement avancé <br>Bonne visée <br>Campagne solo avancée <br>Jeu multjoueur peu développer<br>
+            <img src="assets/img/CODColdW.jpg" alt="CALL OF DUTY Black Ops COLD WAR"> <br>
+            CALL OF DUTY Black Ops COLD WAR (2020) <br>
+            Jeu multjoueur <br>Bonne visée <br>Mouvement plus réel <br>Campagne solo <br>Mode sans fin</li>
+        </section-->
+        <section id="liste-jeu-area" class="liste-jeu-area">
+
+        <article class="jeu">
+            <img src="assets/img/Titanfall2.jpg" alt="Titanfall 2">
+            <h3>TITANFALL 2 (2016)</h3>
+            <p>
+                Jeu multijoueur<br>
+                Mouvement avancé<br>
+                Bonne visée<br>
+                Campagne solo
+            </p>
+            <button formaction="https://fr.wikipedia.org/wiki/Titanfall_2" class="nav-button">
+                Information Titanfall 2
+            </button>
+        </article>
+        <article class="jeu">
+            <img src="assets/img/DOOMEternal.jpg" alt="DOOM Eternal">
+            <h3>DOOM ETERNAL (2020)</h3>
+            <p>
+                Mouvement avancé<br>
+                Bonne visée<br>
+                Campagne solo avancée<br>
+                Multijoueur peu développé
+            </p>
+            <button formaction="https://fr.wikipedia.org/wiki/Doom_Eternal" class="nav-button">
+                Information DOOM Eternal
+            </button>
+        </article>
+
+        <article class="jeu">
+            <img src="assets/img/CODColdW.jpg" alt="Call of Duty Cold War">
+            <h3>CALL OF DUTY Cold War (2020)</h3>
+            <p>
+                Jeu multijoueur<br>
+                Bonne visée<br>
+                Mouvement réaliste<br>
+                Campagne solo<br>
+                Mode sans fin
+            </p>
+            <button formaction="https://fr.wikipedia.org/wiki/Call_of_Duty:_Black_Ops_Cold_War" class="nav-button">
+                Information Cold War
+            </button>
+        </article>
+    </section>
+    <br><br><br><br>
     </main>
     <footer>
         <logo class="social-list">
