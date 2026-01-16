@@ -10,11 +10,10 @@
 
 <body class="page">
         <header class="color-bg">
-                <logo class="main-logo">
-                        <a href="#"><img src="./assets/logos/image.png" alt="Logo" height="60px"></a>
-                </logo>
+
+                <a class="main-logo" href="#"><img src="./assets/logos/image.png" alt="Logo" height="60"></a>
+
                 <nav class="main-nav">
-                        <!--button onclick="toggleList()"><img src="icon_menu_white.png" height="40px"></button-->
                         <ul id="responsive-list">
                                 <li><a href="./index.html" class="nav-button">Accueil</a></li>
                                 <li><a href="./selection_de_jeu.html" class="nav-button">Jeu</a></li>
@@ -27,23 +26,30 @@
 
         <main class="eval-main full-width">
                 <section class="">
-                        <h3 class="no-margin">Votre enfant vous demande un jeu FPS, mais vous n'y connaissez rien en jeu vidéo ? Cette page est faite pour vous !</h3>
-                        <p>Voici un formulaire qui vous permet d'effectuer une recherche de jeux FPS et de pouvoir trier cette liste selon un critère de votre choix.</p>
-            
+                        <h3 class="no-margin">Votre enfant vous demande un jeu FPS, mais vous n'y connaissez rien en jeu
+                                vidéo ? Cette page est faite pour vous !</h3>
+                        <p>Voici un formulaire qui vous permet d'effectuer une recherche de jeux FPS selon vos critères.
+                        </p>
+
                         <form class="eval-form">
                                 <fieldset class="eval-form-fieldset">
                                         <legend class="eval-form-legend">Catégories de classement</legend>
-                                        <p class="eval-form-p"> Les descripteurs de contenu sont appliqués en rapport avec les pictogrammes de cotation assignés et ne sont pas conçus comme des listes exhaustives de contenus. <a href="https://www.esrb.org/ratings-guide/fr/" class="info-icon" target="_blank"><img src="assets/icons/icon_info_black.png" height="15px"></a></p>
+                                        <p class="eval-form-p"> Les descripteurs de contenu sont appliqués en rapport
+                                                avec les pictogrammes de cotation assignés et ne sont pas conçus comme
+                                                des listes exhaustives de contenus. <a
+                                                        href="https://www.esrb.org/ratings-guide/fr/" class="info-icon"
+                                                        target="_blank"><img src="assets/icons/icon_info_black.png"
+                                                                alt="more-info" height="15"></a></p>
                                         <input class="eval-form-input" type="checkbox" id="cat-everyone">
-                                        <label class="eval-form-label" for="cat-everyone">Tout public</label>
+                                        <label class="eval-form-label" for="cat-everyone">Tout public (PEGI 3)</label>
                                         <input class="eval-form-input" type="checkbox" id="cat-10">
-                                        <label class="eval-form-label" for="cat-10">10 ans et +</label>
+                                        <label class="eval-form-label" for="cat-10">7 ans et + (PEGI 7)</label>
                                         <input class="eval-form-input" type="checkbox" id="cat-13">
-                                        <label class="eval-form-label" for="cat-13">13 ans et +</label>
+                                        <label class="eval-form-label" for="cat-13">12 ans et + (PEGI 12)</label>
                                         <input class="eval-form-input" type="checkbox" id="cat-17">
-                                        <label class="eval-form-label" for="cat-17">17 ans et +</label>
+                                        <label class="eval-form-label" for="cat-17">16 ans et + (PEGI 16)</label>
                                         <input class="eval-form-input" type="checkbox" id="cat-18">
-                                        <label class="eval-form-label" for="cat-18">18 ans et +</label>
+                                        <label class="eval-form-label" for="cat-18">18 ans et + (PEGI 18)</label>
                                         <input class="eval-form-input" type="checkbox" id="cat-pending">
                                         <label class="eval-form-label" for="cat-pending">Cote en attente</label>
                                 </fieldset>
@@ -54,7 +60,8 @@
                                         <input class="eval-form-input" type="checkbox" id="support-ps">
                                         <label class="eval-form-label" for="support-ps">PlayStation (PS4, PS5…)</label>
                                         <input class="eval-form-input" type="checkbox" id="support-xbox">
-                                        <label class="eval-form-label" for="support-xbox">Xbox (One, Series X/S…)</label>
+                                        <label class="eval-form-label" for="support-xbox">Xbox (One, Series
+                                                X/S…)</label>
                                         <input class="eval-form-input" type="checkbox" id="support-switch">
                                         <label class="eval-form-label" for="support-switch">Nintendo Switch</label>
                                         <input class="eval-form-input" type="checkbox" id="support-mobile">
@@ -82,7 +89,8 @@
                                         <input class="eval-form-input" type="checkbox" id="type-arcade">
                                         <label class="eval-form-label" for="type-arcade">FPS arcade</label>
                                         <input class="eval-form-input" type="checkbox" id="type-realiste">
-                                        <label class="eval-form-label" for="type-realiste">FPS réaliste / simulation</label>
+                                        <label class="eval-form-label" for="type-realiste">FPS réaliste /
+                                                simulation</label>
                                         <input class="eval-form-input" type="checkbox" id="type-narratif">
                                         <label class="eval-form-label" for="type-narratif">FPS narratif</label>
                                         <input class="eval-form-input" type="checkbox" id="type-sf">
@@ -100,30 +108,82 @@
                         </form>
                 </section>
                 <section id="eval-result" class="eval-result">
-                        <p>Test masqué/affiché</p>
+                        <h2>Résultats de la recherche</h2>
+                        <table class="eval-list">
+                                <thead>
+                                        <tr>
+                                                <th>Vignette</th>
+                                                <th>Nom</th>
+                                                <th>Catégorie</th>
+                                                <th>Mode</th>
+                                                <th>Type</th>
+                                        </tr>
+                                </thead>
+                                <tbody>
+                                        <tr>
+                                                <td>
+                                                        <img class="eval-vignette" src="assets/img/Titanfall2_16-9.jpg"
+                                                                width="100" alt="TitanFall2">
+                                                </td>
+                                                <td class="eval-tab-name">TITANFALL 2</td>
+                                                <td>PEGI 16</td>
+                                                <td>Solo, <br>Multijoueur, <br>En ligne</td>
+                                                <td>Science‑fiction, <br>Arcade, <br>Narratif</td>
+                                        </tr>
+                                        <tr>
+                                                <td>
+                                                        <img class="eval-vignette" src="assets/img/Valo.jpg"
+                                                                alt="TitanFall2">
+                                                </td>
+                                                <td class="eval-tab-name">Valorant (2020)</td>
+                                                <td>PEGI 16</td>
+                                                <td>Multijoueur, <br>En ligne</td>
+                                                <td>Tactique, <br>Hero shooter</td>
+                                        </tr>
+                                        <tr>
+                                                <td>
+                                                        <img class="eval-vignette" src="assets/img/PUBG.jpg" width="100"
+                                                                alt="TitanFall2">
+                                                </td>
+                                                <td class="eval-tab-name">PUGS (2017)</td>
+                                                <td>PEGI 16</td>
+                                                <td>Solo, <br>Multijoueur, <br>En ligne</td>
+                                                <td>Science‑fiction, <br>Arcade, <br>Narratif</td>
+                                        </tr>
+                                </tbody>
+                        </table>
+                        <a class="main-button" href="./evaluation.html">Refaire le formulaire</a>
                 </section>
         </main>
 
-        <article>
-                <p class="empty-bottom"></p>
-        </article>
+
+        <p class="empty-bottom"></p>
+
 
         <footer>
-                <article class="social-list grid-left">
-                        <a href="https://www.linkedin.com/edu/iut-de-bayonne-et-du-pays-basque-164183" target="_blank" title="Lien LinkedIn">
-                                <img src="assets/icons/icon_social_media_linkedin_white.png" alt="Logo LinkedIn" height="30px">
-                        </a>
-                        <a href="https://www.facebook.com/IUT.Bayonne.Pays.Basque/" target="_blank" title="Lien Facebook">
-                                <img src="assets/icons/icon_social_media_facebook_white.png" alt="Logo Facebook" height="30px">
-                        </a>
-                        <a href="https://www.instagram.com/iutbayonne/" target="_blank" title="Lien Instagram">
-                                <img src="assets/icons/icon_social_media_instagram_white.png" alt="Logo Instagram" height="30px">
-                        </a>
-                        <a href="https://www.youtube.com/@iutbayonne" target="_blank" title="Lien YouTube">
-                                <img src="assets/icons/icon_social_media_youtube_white.png" alt="Logo YouTube" height="30px">
-                        </a>
-                </article>
-                <article class="grid-center"><p>©2025 - Zone FPS - Tous droits réservés</p></article>
+                <ul class="grid-left">
+                        <li><a href="https://www.linkedin.com/edu/iut-de-bayonne-et-du-pays-basque-164183"
+                                        target="_blank" title="Lien LinkedIn">
+                                        <img src="assets/icons/icon_social_media_linkedin_white.png" alt="Logo LinkedIn"
+                                                height="30">
+                                </a></li>
+                        <li><a href="https://www.facebook.com/IUT.Bayonne.Pays.Basque/" target="_blank"
+                                        title="Lien Facebook">
+                                        <img src="assets/icons/icon_social_media_facebook_white.png" alt="Logo Facebook"
+                                                height="30">
+                                </a></li>
+                        <li><a href="https://www.instagram.com/iutbayonne/" target="_blank" title="Lien Instagram">
+                                        <img src="assets/icons/icon_social_media_instagram_white.png"
+                                                alt="Logo Instagram" height="30">
+                                </a></li>
+                        <li><a href="https://www.youtube.com/@iutbayonne" target="_blank" title="Lien YouTube">
+                                        <img src="assets/icons/icon_social_media_youtube_white.png" alt="Logo YouTube"
+                                                height="30">
+                                </a></li>
+                </ul>
+
+                <p class="grid-center">©2025 - Zone FPS - Tous droits réservés</p>
+
         </footer>
 
 </body>
