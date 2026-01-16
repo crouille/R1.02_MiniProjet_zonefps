@@ -1,327 +1,337 @@
-<html lang ="fr">
+<html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <title>selection de jeu</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header class="color-bg">   
-    <logo class="main-logo">
-        <a href="#"><img src="./assets/logos/image.png" alt="Logo" height="60px"></a>
-    </logo>
-    <nav class="main-nav">
-        <!--button onclick="toggleList()"><img src="icon_menu_white.png" height="40px"></button-->
-        <ul id="responsive-list">
-            <li><a href="./index.html" class="nav-button">Accueil</a></li>
-            <li><a href="./selection_de_jeu.html" class="nav-button">Jeu</a></li>
-            <li><a href="./statistiques.html" class="nav-button">Statistiques</a></li>
-            <li><a href="./evaluation.html" class="nav-button">Évaluation</a></li>
-            <li><a href="" class="main-button">Connexion</a></li>
-        </ul>
-    </nav>
+    <header class="color-bg">
+        <logo class="main-logo">
+            <a href="#"><img src="./assets/logos/image.png" alt="Logo" height="60px"></a>
+        </logo>
+        <nav class="main-nav">
+            <!--button onclick="toggleList()"><img src="icon_menu_white.png" height="40px"></button-->
+            <ul id="responsive-list">
+                <li><a href="./index.html" class="nav-button">Accueil</a></li>
+                <li><a href="./selection_de_jeu.html" class="nav-button">Jeu</a></li>
+                <li><a href="./statistiques.html" class="nav-button">Statistiques</a></li>
+                <li><a href="./evaluation.html" class="nav-button">Évaluation</a></li>
+                <li><a href="" class="main-button">Connexion</a></li>
+            </ul>
+        </nav>
     </header>
     <aside>
-        <nav>  
-        <ul>
-            <h1><li><a href="./selection_de_jeu.html" class="nav-button">MENU</a></li></h1>
-            <li><a href="#liste-jeu-area" class="nav-button">Liste des jeux</a></li>
-            <li><a href="#selection-jeu-area" class="nav-button">selection du jeux</a></li>
-            <li><a href="#categorie-area" class="nav-button">Catégorie</a></li>
-        </ul>
+        <nav>
+            <ul>
+                <h1>
+                    <li><a href="./selection_de_jeu.html" class="nav-button">MENU</a></li>
+                </h1>
+                <li><a href="#liste-jeu-area" class="nav-button">Liste des jeux</a></li>
+                <li><a href="#selection-jeu-area" class="nav-button">selection du jeux</a></li>
+                <li><a href="#categorie-area" class="nav-button">Catégorie</a></li>
+            </ul>
         </nav>
     </aside>
     <main class="colonne2">
         <h1>Selection de jeu</h1>
         <section id="selection-jeu-area" class="selection-jeu-area">
-        <a href="#formulaire" class="nav-button">Sélectionner un jeu</a>
-        <section id="formulaire" class="formulaire">
-    <h2>Questionnaire de préférences FPS</h2>
-    <form>
-        <h3>Informations</h3>
-        <label for="nom">Nom :</label>
-        <input type="text" id="nom" name="nom" required><br>
-        <label for="prenom">Prénom :</label>
-        <input type="text" id="prenom" name="prenom" required><br>
-        <label for="email">Email :</label>
-        <input type="email" id="email" name="email" required><br>
-        <label for="age">Âge :</label>
-        <input type="number" id="age" name="age" min="1" max="150" required><br>
+            <a href="#formulaire" class="nav-button">Sélectionner un jeu</a>
+            <section id="formulaire" class="formulaire">
+                <h2>Questionnaire de préférences FPS</h2>
+                <form>
+                    <h3>Informations</h3>
+                    <label for="nom">Nom :</label>
+                    <input type="text" id="nom" name="nom" required><br>
+                    <label for="prenom">Prénom :</label>
+                    <input type="text" id="prenom" name="prenom" required><br>
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" required><br>
+                    <label for="age">Âge :</label>
+                    <input type="number" id="age" name="age" min="1" max="150" required><br>
 
-        <h3>Expérience FPS</h3>
-        <label><input type="radio" name="xp" required> Débutant</label><br>
-        <label><input type="radio" name="xp"> Intermédiaire</label><br>
-        <label><input type="radio" name="xp"> Expérimenté</label><br>
+                    <h3>Expérience FPS</h3>
+                    <label><input type="radio" name="xp" required> Débutant</label><br>
+                    <label><input type="radio" name="xp"> Intermédiaire</label><br>
+                    <label><input type="radio" name="xp"> Expérimenté</label><br>
 
-        <h3>Gameplay recherché</h3>
-        <label><input type="checkbox"> Mouvement rapide</label><br>
-        <label><input type="checkbox"> Bonne visée</label><br>
-        <label><input type="checkbox"> Gameplay réaliste</label><br>
+                    <h3>Gameplay recherché</h3>
+                    <label><input type="checkbox"> Mouvement rapide</label><br>
+                    <label><input type="checkbox"> Bonne visée</label><br>
+                    <label><input type="checkbox"> Gameplay réaliste</label><br>
 
-        <h3>Modes de jeu préférés</h3>
-        <label><input type="checkbox"> Compétitif</label><br>
-        <label><input type="checkbox"> Coopératif</label><br>
-        <label><input type="checkbox"> Mode solo</label><br>
+                    <h3>Modes de jeu préférés</h3>
+                    <label><input type="checkbox"> Compétitif</label><br>
+                    <label><input type="checkbox"> Coopératif</label><br>
+                    <label><input type="checkbox"> Mode solo</label><br>
 
-        <h3></h3>
-        <input type="submit" value="Envoyer"><br>
-        
-        <h3>Choisis ton jeu</h3>
-        
-        <!-- Boutons de redirection -->
-        <button formaction="https://fr.wikipedia.org/wiki/Titanfall_2" class="nav-button">
-            Titanfall 2
-        </button>
-        
-        <button formaction="https://fr.wikipedia.org/wiki/Doom_Eternal" class="nav-button">
-            DOOM Eternal
-        </button>
-        
-        <button formaction="https://fr.wikipedia.org/wiki/Call_of_Duty:_Black_Ops_Cold_War" class="nav-button">
-            Call of Duty Cold War
-        </button>
-        <button formaction="https://fr.wikipedia.org/wiki/Overwatch_2" class="nav-button">
-            Overwatch 2
-        </button>
-        <button formaction="https://fr.wikipedia.org/wiki/Tom_Clancy%27s_Rainbow_Six_Siege" class="nav-button">
-            Rainbow Six Siege
-        </button>
-        <button formaction="https://fr.wikipedia.org/wiki/Counter-Strike_2" class="nav-button">
-            Counter-Strike 2
-        </button>
-        <button formaction="https://fr.wikipedia.org/wiki/Valorant" class="nav-button">
-            Valorant
-        </button>
-        <button formaction="https://fr.wikipedia.org/wiki/Halo_Infinite" class="nav-button">
-            Halo Infinite
-        </button>
-        <button formaction="https://fr.wikipedia.org/wiki/Call_of_Duty:_Warzone_2.0" class="nav-button">
-            Call of Duty Warzone 2.0
-        </button>
-        <button formaction="https://fr.wikipedia.org/wiki/Apex_Legends" class="nav-button">
-            Apex Legends
-        </button>
-        <button formaction="https://fr.wikipedia.org/wiki/PUBG" class="nav-button">
-            PUBG
-        </button>
-        <button formaction="https://fr.wikipedia.org/wiki/Battlefield_6" class="nav-button">
-            Battlefield 6
-        </button>
-    </form>
-        </section>
+                    <h3></h3>
+                    <input type="submit" value="Envoyer"><br>
+
+                    <h3>Choisis ton jeu</h3>
+
+                    <!-- Boutons de redirection -->
+                    <button formaction="https://fr.wikipedia.org/wiki/Titanfall_2" class="nav-button">
+                        Titanfall 2
+                    </button>
+
+                    <button formaction="https://fr.wikipedia.org/wiki/Doom_Eternal" class="nav-button">
+                        DOOM Eternal
+                    </button>
+
+                    <button formaction="https://fr.wikipedia.org/wiki/Call_of_Duty:_Black_Ops_Cold_War"
+                        class="nav-button">
+                        Call of Duty Cold War
+                    </button>
+                    <button formaction="https://fr.wikipedia.org/wiki/Overwatch_2" class="nav-button">
+                        Overwatch 2
+                    </button>
+                    <button formaction="https://fr.wikipedia.org/wiki/Tom_Clancy%27s_Rainbow_Six_Siege"
+                        class="nav-button">
+                        Rainbow Six Siege
+                    </button>
+                    <button formaction="https://fr.wikipedia.org/wiki/Counter-Strike_2" class="nav-button">
+                        Counter-Strike 2
+                    </button>
+                    <button formaction="https://fr.wikipedia.org/wiki/Valorant" class="nav-button">
+                        Valorant
+                    </button>
+                    <button formaction="https://fr.wikipedia.org/wiki/Halo_Infinite" class="nav-button">
+                        Halo Infinite
+                    </button>
+                    <button formaction="https://fr.wikipedia.org/wiki/Call_of_Duty:_Warzone_2.0" class="nav-button">
+                        Call of Duty Warzone 2.0
+                    </button>
+                    <button formaction="https://fr.wikipedia.org/wiki/Apex_Legends" class="nav-button">
+                        Apex Legends
+                    </button>
+                    <button formaction="https://fr.wikipedia.org/wiki/PUBG" class="nav-button">
+                        PUBG
+                    </button>
+                    <button formaction="https://fr.wikipedia.org/wiki/Battlefield_6" class="nav-button">
+                        Battlefield 6
+                    </button>
+                </form>
+            </section>
         </section>
         <h2>Liste des jeux</h2>
         <section id="liste-jeu-area" class="liste-jeu-area">
 
-        <article class="jeu">
-            <img src="assets/img/Titanfall2.jpg" alt="Titanfall 2">
-            <h3>TITANFALL 2 (2016)</h3>
-            <p>
-                Jeu multijoueur<br>
-                Mouvement avancé<br>
-                Bonne visée<br>
-                Campagne solo
-            </p>
-            <a href="https://fr.wikipedia.org/wiki/Titanfall_2" target="_blank">
-                <button class="nav-button">
-                    Information Titanfall 2
-                </button>
-            </a>
-        </article>
-        <article class="jeu">
-            <img src="assets/img/DOOMEternal.jpg" alt="DOOM Eternal">
-            <h3>DOOM ETERNAL (2020)</h3>
-            <p>
-                Mouvement avancé<br>
-                Bonne visée<br>
-                Campagne solo avancée<br>
-                Multijoueur peu développé
-            </p>
-            <a href="https://fr.wikipedia.org/wiki/Doom_Eternal" target="_blank">
-                <button class="nav-button">
-                    Information DOOM Eternal
-                </button>
-            </a>
-        </article>
+            <article class="jeu">
+                <img src="assets/img/Titanfall2.jpg" alt="Titanfall 2">
+                <h3>TITANFALL 2 (2016)</h3>
+                <p>
+                    Jeu multijoueur<br>
+                    Mouvement avancé<br>
+                    Bonne visée<br>
+                    Campagne solo
+                </p>
+                <a href="https://fr.wikipedia.org/wiki/Titanfall_2" target="_blank">
+                    <button class="nav-button">
+                        Information Titanfall 2
+                    </button>
+                </a>
+            </article>
+            <article class="jeu">
+                <img src="assets/img/DOOMEternal.jpg" alt="DOOM Eternal">
+                <h3>DOOM ETERNAL (2020)</h3>
+                <p>
+                    Mouvement avancé<br>
+                    Bonne visée<br>
+                    Campagne solo avancée<br>
+                    Multijoueur peu développé
+                </p>
+                <a href="https://fr.wikipedia.org/wiki/Doom_Eternal" target="_blank">
+                    <button class="nav-button">
+                        Information DOOM Eternal
+                    </button>
+                </a>
+            </article>
 
-        <article class="jeu">
-            <img src="assets/img/CODColdW.jpg" alt="Call of Duty Cold War">
-            <h3>CALL OF DUTY Cold War (2020)</h3>
-            <p>
-                Jeu multijoueur<br>
-                Bonne visée<br>
-                Mouvement réaliste<br>
-                Campagne solo<br>
-                Mode sans fin
-            </p>
-            <a href="https://fr.wikipedia.org/wiki/Call_of_Duty:_Black_Ops_Cold_War" target="_blank">
-                <button class="nav-button">
-                    Information Cold War
-                </button>
-            </a>
-        </article>
-        <article class="jeu">
-            <img src="assets/img/Overwatch2.png" alt="Overwatch 2">
-            <h3>OVERWATCH 2 (2022)</h3>
-            <p>
-                Jeu multijoueur<br>
-                Bonne visée<br>
-                Mouvement rapide<br>
-                Jeu en équipe<br>
-                Compétitif<br>
-                Communication importante à un bon niveau
-            </p>
-            <a href="https://fr.wikipedia.org/wiki/Overwatch_2" target="_blank">
-                <button class="nav-button">
-                    Information Overwatch 2
-                </button>
-            </a>
-        </article>
-        <article class="jeu">
-            <img src="assets/img/R6.jpg" alt="Rainbow Six Siege">
-            <h3>RAINBOW SIX SIEGE (2015)</h3>
-            <p>
-                Jeu multijoueur<br>
-                Bonne visée<br>
-                Mouvement réaliste<br>
-                Tactique<br>
-                Jeu en équipe
-            </p>
-            <a href="https://fr.wikipedia.org/wiki/Tom_Clancy%27s_Rainbow_Six_Siege" target="_blank">
-                <button class="nav-button">
-                    Information Rainbow Six Siege
-                </button>
-            </a>
-        </article>
-        <article class="jeu">
-            <img src="assets/img/CS2.jpg" alt="Counter-Strike 2">
-            <h3>COUNTER-STRIKE 2 (2023)</h3>
-            <p>
-                Jeu multijoueur<br>
-                Bonne visée<br>
-                Mouvement réaliste<br>
-                Tactique<br>
-                Jeu en équipe<br>
-                Compétitif
-            </p>
-            <a href="https://fr.wikipedia.org/wiki/Counter-Strike_2" target="_blank">
-                <button class="nav-button">
-                    Information CS2
-                </button>
-            </a>
-        </article>
-        <article class="jeu">
-            <img src="assets/img/Valo.jpg" alt="Valorant">
-            <h3>VALORANT (2020)</h3>
-            <p>
-                Jeu multijoueur<br>
-                Bonne visée<br>
-                Tactique<br>
-                Jeu en équipe<br>
-                Compétitif<br>
-                Amusant
-            </p>
-            <a href="https://fr.wikipedia.org/wiki/Valorant" target="_blank">
-                <button class="nav-button">
-                    Information Valorant
-                </button>
-            </a>
-        </article>
-        <article class="jeu">
-            <img src="assets/img/Halo.jpg" alt="Halo Infinite">
-            <h3>HALO INFINITE (2021)</h3>
-            <p>
-                Jeu multijoueur<br>
-                Mouvement avancé<br>
-                Bonne visée<br>
-                Campagne solo
-            </p>
-            <a href="https://fr.wikipedia.org/wiki/Halo_Infinite" target="_blank">
-                <button class="nav-button">
-                    Information Halo Infinite
-                </button>
-            </a>
-        </article>
-        <article class="jeu">
-            <img src="assets/img/Warzone.jpg" alt="Call of Duty Warzone 2.0">
-            <h3>CALL OF DUTY WARZONE 2.0 (2022)</h3>
-            <p>
-                Jeu multijoueur<br>
-                Bonne visée<br>
-                Mouvement réaliste<br>
-                Mode battle royale
-            </p>
-            <a href="https://fr.wikipedia.org/wiki/Call_of_Duty:_Warzone_2.0" target="_blank">
-                <button class="nav-button">
-                    Information Warzone 2.0
-                </button>
-            </a>
-        </article>
-        <article class="jeu">
-            <img src="assets/img/Apex.jpg" alt="Apex Legends">
-            <h3>APEX LEGENDS (2019)</h3>
-            <p>
-                Jeu multijoueur<br>
-                Mouvement avancé<br>
-                Bonne visée<br>
-                Mode battle royale
-            </p>
-            <a href="https://fr.wikipedia.org/wiki/Apex_Legends" target="_blank">
-                <button class="nav-button">
-                    Information Apex Legends
-                </button>
-            </a>
-        </article>
-        <article class="jeu">
-            <img src="assets/img/PUBG.jpg" alt="PUBG">
-            <h3>PUBG (2017)</h3>
-            <p>
-                Jeu multijoueur<br>
-                Mouvement avancé<br>
-                Amusant<br>
-                Occasionnel<br>
-                Mode battle royale
-            </p>
-            <a href="https://fr.wikipedia.org/wiki/PUBG" target="_blank">
-                <button class="nav-button">
-                    Information PUBG
-                </button>
-            </a>
-        </article>
-        <article class="jeu">
-            <img src="assets/img/BF6.jpg" alt="Battlefield 6">
-            <h3>BATTLEFIELD 6 (2021)</h3>
-            <p>
-                Jeu multijoueur<br>
-                Mouvement avancé<br>
-                Bonne visée<br>
-                Mode battle royale
-            </p>
-            <a href="https://fr.wikipedia.org/wiki/Battlefield_6" target="_blank">
-                <button class="nav-button">
-                    Information Battlefield 6
-                </button>
-            </a>
-        </article>
-        <br><br><br><br>
+            <article class="jeu">
+                <img src="assets/img/CODColdW.jpg" alt="Call of Duty Cold War">
+                <h3>CALL OF DUTY Cold War (2020)</h3>
+                <p>
+                    Jeu multijoueur<br>
+                    Bonne visée<br>
+                    Mouvement réaliste<br>
+                    Campagne solo<br>
+                    Mode sans fin
+                </p>
+                <a href="https://fr.wikipedia.org/wiki/Call_of_Duty:_Black_Ops_Cold_War" target="_blank">
+                    <button class="nav-button">
+                        Information Cold War
+                    </button>
+                </a>
+            </article>
+            <article class="jeu">
+                <img src="assets/img/Overwatch2.png" alt="Overwatch 2">
+                <h3>OVERWATCH 2 (2022)</h3>
+                <p>
+                    Jeu multijoueur<br>
+                    Bonne visée<br>
+                    Mouvement rapide<br>
+                    Jeu en équipe<br>
+                    Compétitif<br>
+                    Communication importante à un bon niveau
+                </p>
+                <a href="https://fr.wikipedia.org/wiki/Overwatch_2" target="_blank">
+                    <button class="nav-button">
+                        Information Overwatch 2
+                    </button>
+                </a>
+            </article>
+            <article class="jeu">
+                <img src="assets/img/R6.jpg" alt="Rainbow Six Siege">
+                <h3>RAINBOW SIX SIEGE (2015)</h3>
+                <p>
+                    Jeu multijoueur<br>
+                    Bonne visée<br>
+                    Mouvement réaliste<br>
+                    Tactique<br>
+                    Jeu en équipe
+                </p>
+                <a href="https://fr.wikipedia.org/wiki/Tom_Clancy%27s_Rainbow_Six_Siege" target="_blank">
+                    <button class="nav-button">
+                        Information Rainbow Six Siege
+                    </button>
+                </a>
+            </article>
+            <article class="jeu">
+                <img src="assets/img/CS2.jpg" alt="Counter-Strike 2">
+                <h3>COUNTER-STRIKE 2 (2023)</h3>
+                <p>
+                    Jeu multijoueur<br>
+                    Bonne visée<br>
+                    Mouvement réaliste<br>
+                    Tactique<br>
+                    Jeu en équipe<br>
+                    Compétitif
+                </p>
+                <a href="https://fr.wikipedia.org/wiki/Counter-Strike_2" target="_blank">
+                    <button class="nav-button">
+                        Information CS2
+                    </button>
+                </a>
+            </article>
+            <article class="jeu">
+                <img src="assets/img/Valo.jpg" alt="Valorant">
+                <h3>VALORANT (2020)</h3>
+                <p>
+                    Jeu multijoueur<br>
+                    Bonne visée<br>
+                    Tactique<br>
+                    Jeu en équipe<br>
+                    Compétitif<br>
+                    Amusant
+                </p>
+                <a href="https://fr.wikipedia.org/wiki/Valorant" target="_blank">
+                    <button class="nav-button">
+                        Information Valorant
+                    </button>
+                </a>
+            </article>
+            <article class="jeu">
+                <img src="assets/img/Halo.jpg" alt="Halo Infinite">
+                <h3>HALO INFINITE (2021)</h3>
+                <p>
+                    Jeu multijoueur<br>
+                    Mouvement avancé<br>
+                    Bonne visée<br>
+                    Campagne solo
+                </p>
+                <a href="https://fr.wikipedia.org/wiki/Halo_Infinite" target="_blank">
+                    <button class="nav-button">
+                        Information Halo Infinite
+                    </button>
+                </a>
+            </article>
+            <article class="jeu">
+                <img src="assets/img/Warzone.jpg" alt="Call of Duty Warzone 2.0">
+                <h3>CALL OF DUTY WARZONE 2.0 (2022)</h3>
+                <p>
+                    Jeu multijoueur<br>
+                    Bonne visée<br>
+                    Mouvement réaliste<br>
+                    Mode battle royale
+                </p>
+                <a href="https://fr.wikipedia.org/wiki/Call_of_Duty:_Warzone_2.0" target="_blank">
+                    <button class="nav-button">
+                        Information Warzone 2.0
+                    </button>
+                </a>
+            </article>
+            <article class="jeu">
+                <img src="assets/img/Apex.jpg" alt="Apex Legends">
+                <h3>APEX LEGENDS (2019)</h3>
+                <p>
+                    Jeu multijoueur<br>
+                    Mouvement avancé<br>
+                    Bonne visée<br>
+                    Mode battle royale
+                </p>
+                <a href="https://fr.wikipedia.org/wiki/Apex_Legends" target="_blank">
+                    <button class="nav-button">
+                        Information Apex Legends
+                    </button>
+                </a>
+            </article>
+            <article class="jeu">
+                <img src="assets/img/PUBG.jpg" alt="PUBG">
+                <h3>PUBG (2017)</h3>
+                <p>
+                    Jeu multijoueur<br>
+                    Mouvement avancé<br>
+                    Amusant<br>
+                    Occasionnel<br>
+                    Mode battle royale
+                </p>
+                <a href="https://fr.wikipedia.org/wiki/PUBG" target="_blank">
+                    <button class="nav-button">
+                        Information PUBG
+                    </button>
+                </a>
+            </article>
+            <article class="jeu">
+                <img src="assets/img/BF6.jpg" alt="Battlefield 6">
+                <h3>BATTLEFIELD 6 (2021)</h3>
+                <p>
+                    Jeu multijoueur<br>
+                    Mouvement avancé<br>
+                    Bonne visée<br>
+                    Mode battle royale
+                </p>
+                <a href="https://fr.wikipedia.org/wiki/Battlefield_6" target="_blank">
+                    <button class="nav-button">
+                        Information Battlefield 6
+                    </button>
+                </a>
+            </article>
+            <br><br><br><br>
         </section>
     </main>
     <footer>
-                <article class="social-list grid-left">
-                        <a href="https://www.linkedin.com/edu/iut-de-bayonne-et-du-pays-basque-164183" target="_blank" title="Lien LinkedIn">
-                                <img src="assets/icons/icon_social_media_linkedin_white.png" alt="Logo LinkedIn" height="30px">
-                        </a>
-                        <a href="https://www.facebook.com/IUT.Bayonne.Pays.Basque/" target="_blank" title="Lien Facebook">
-                                <img src="assets/icons/icon_social_media_facebook_white.png" alt="Logo Facebook" height="30px">
-                        </a>
-                        <a href="https://www.instagram.com/iutbayonne/" target="_blank" title="Lien Instagram">
-                                <img src="assets/icons/icon_social_media_instagram_white.png" alt="Logo Instagram" height="30px">
-                        </a>
-                        <a href="https://www.youtube.com/@iutbayonne" target="_blank" title="Lien YouTube">
-                                <img src="assets/icons/icon_social_media_youtube_white.png" alt="Logo YouTube" height="30px">
-                        </a>
-                </article>
-                <article class="grid-center"><p>©2025 - Zone FPS - Tous droits réservés</p></article>
-        </footer>
+        <ul class="grid-left">
+            <li><a href="https://www.linkedin.com/edu/iut-de-bayonne-et-du-pays-basque-164183" target="_blank"
+                    title="Lien LinkedIn">
+                    <img src="assets/icons/icon_social_media_linkedin_white.png" alt="Logo LinkedIn" height="30">
+                </a></li>
+            <li><a href="https://www.facebook.com/IUT.Bayonne.Pays.Basque/" target="_blank" title="Lien Facebook">
+                    <img src="assets/icons/icon_social_media_facebook_white.png" alt="Logo Facebook" height="30">
+                </a></li>
+            <li><a href="https://www.instagram.com/iutbayonne/" target="_blank" title="Lien Instagram">
+                    <img src="assets/icons/icon_social_media_instagram_white.png" alt="Logo Instagram" height="30">
+                </a></li>
+            <li><a href="https://www.youtube.com/@iutbayonne" target="_blank" title="Lien YouTube">
+                    <img src="assets/icons/icon_social_media_youtube_white.png" alt="Logo YouTube" height="30">
+                </a></li>
+        </ul>
+
+        <p class="grid-center">©2025 - Zone FPS - Tous droits réservés</p>
+
+    </footer>
 
 </body>
+
 </html>
