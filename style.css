@@ -18,15 +18,12 @@ body {
         font-family: 'Bahnschrift', 'Segoe UI', sans-serif;
         padding: 0px;
         margin: 0px;
-		/*display: grid;
-		grid-template-columns: 25% 3fr;*/
+        height: 100%;
 }
-
 header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        position: static;
         padding: 5px;
         height: 6vh;
         max-height: 70px;
@@ -41,12 +38,28 @@ header ul {
 header li {
         padding: 5px;
 }
+.eval-form{
+        background-color: #cecece68;
+        padding: 12px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+}
+.eval-form-fieldset{
+        padding: 20px;
+}
+.eval-form-legend{
+        color:#DF3F3F;
+        font-weight:bold 
+}
 aside {
-    background-color: #253356;
-    max-width: 20%;
+        background-color: #253356;
+        max-width: 20%;
 	height: 89vh;
 	position: fixed;
 	left: 0;
+        z-index: -1;
 }
 aside ul {
 	list-style-type: none;
@@ -59,54 +72,45 @@ aside ul {
 aside .nav-button {
 	margin: 10px 0;
 }
-
-footer ul {
-	list-style-type: none;
-	margin: 10px;
-	padding: 10px;
-}
-
-footer a {
-	color: white;
-	text-decoration: none;
-}
-
 footer{
 	display: grid;
-	grid-template-columns: auto 1fr auto;
-	align-items: center;
-	gap: 15px;
+	width: 100%;
+	grid-template-columns: auto 1fr;
         margin: 0;
-	padding: 15px;
-	left: 0;
-	bottom: 0;
+	padding: 8px 12px;
+        align-items: center;
 	position: fixed;
-	width: 100vw;
-	height: 5vh;
+        bottom: 0;
+        z-index: 10;
 	color: white;
 	background-color: #253356;
+        box-sizing: border-box;
 }
-
-footer .social-list{
-	display:inline-flex;
-	inline-size: 22px;
-	gap: 10px;
-	color: white;
-	align-items: center;
-	margin: 5px;
+.grid-left {
+        grid-column: 1;
+        justify-self: start;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+}
+.grid-center {
+        grid-column: 2;
+        justify-self: center;
+        display: flex;
+        align-items: center;
+}
+footer a {
+	text-decoration: none;
 }
 footer p{
-	justify-self: center;
-	margin: 0;
-	text-align: center;
+        margin: 0;
 }
-footer a{
-	text-decoration:none;
+footer img {
+        display: block;
 }
 h4{
 	margin: 2px;
 }
-
 .nav-button {
         box-shadow: inset 0px 1px 0px 0px #ffffff;
         background: #ffffff;
@@ -122,7 +126,6 @@ h4{
         text-decoration: none;
         text-shadow: 0px 1px 0px #ffffff;
 }
-
 .main-button {
         background-color: #2f45b7;
         border-radius: 6px;
@@ -139,10 +142,13 @@ h4{
 main{
         margin: 0;
         padding: 0;
+        flex: 1;
 }
-.eval h3{
+.eval-main{
+        max-height: 80vh;
+}
+.no-margin{
         margin: 0;
-        padding-top: 10px;
 }
 .full-height{
 	height: 81vh;

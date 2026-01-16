@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="page">
         <header class="color-bg">
                 <logo class="main-logo">
                         <a href="#"><img src="./assets/logos/image.png" alt="Logo" height="60px"></a>
@@ -25,71 +25,78 @@
                 </nav>
         </header>
 
-        <main class="eval full-width full-height">
-                <section class="eval-form">
-                        <h3>Votre enfant vous demande un jeu FPS, mais vous n'y connaissez rien en jeu vidéo ? Cette page est faite pour vous !</h3>
+        <main class="eval-main full-width full-height">
+                <section class="">
+                        <h3 class="no-margin">Votre enfant vous demande un jeu FPS, mais vous n'y connaissez rien en jeu vidéo ? Cette page est faite pour vous !</h3>
                         <p>Voici un formulaire qui vous permet d'effectuer une recherche de jeux FPS et de pouvoir trier cette liste selon un critère de votre choix.</p>
             
-                        <form>
-                                <h4>Catégories de classement <a href="https://www.esrb.org/ratings-guide/fr/" class="info-icon" target="_blank"><img src="assets/icons/icon_info_black.png" height="15px"></a></h4>
-                                <input type="checkbox" id="cat-everyone">
-                                <label for="cat-everyone">Tout public</label>
-                                <input type="checkbox" id="cat-10">
-                                <label for="cat-10">10 ans et +</label>
-                                <input type="checkbox" id="cat-13">
-                                <label for="cat-13">13 ans et +</label>
-                                <input type="checkbox" id="cat-17">
-                                <label for="cat-17">17 ans et +</label>
-                                <input type="checkbox" id="cat-18">
-                                <label for="cat-18">18 ans et +</label>
-                                <input type="checkbox" id="cat-pending">
-                                <label for="cat-pending">Cote en attente</label>
-                        
-                                <h4>Support de jeu</h4>
-                                <input type="checkbox" id="support-pc">
-                                <label for="support-pc">PC</label>
-                                <input type="checkbox" id="support-ps">
-                                <label for="support-ps">PlayStation (PS4, PS5…)</label>
-                                <input type="checkbox" id="support-xbox">
-                                <label for="support-xbox">Xbox (One, Series X/S…)</label>
-                                <input type="checkbox" id="support-switch">
-                                <label for="support-switch">Nintendo Switch</label>
-                                <input type="checkbox" id="support-mobile">
-                                <label for="support-mobile">Mobile</label>
-                                <input type="checkbox" id="support-vr">
-                                <label for="support-vr">VR (Meta Quest, PS VR…)</label>
-                        
-                                <h4>Mode de jeu</h4>
-                                <input type="checkbox" id="mode-solo">
-                                <label for="mode-solo">Seul</label>
-                                <input type="checkbox" id="mode-multi">
-                                <label for="mode-multi">Multijoueur</label>
-                                <input type="checkbox" id="mode-coop">
-                                <label for="mode-coop">Coopératif</label>
-                                <input type="checkbox" id="mode-online">
-                                <label for="mode-online">En ligne</label>
-                                <input type="checkbox" id="mode-offline">
-                                <label for="mode-offline">Hors ligne</label>
-                        
-                                <h4>Type de FPS</h4>
-                                <input type="checkbox" id="type-tactique">
-                                <label for="type-tactique">FPS tactique</label>
-                                <input type="checkbox" id="type-arcade">
-                                <label for="type-arcade">FPS arcade</label>
-                                <input type="checkbox" id="type-realiste">
-                                <label for="type-realiste">FPS réaliste / simulation</label>
-                                <input type="checkbox" id="type-narratif">
-                                <label for="type-narratif">FPS narratif</label>
-                                <input type="checkbox" id="type-sf">
-                                <label for="type-sf">FPS de science-fiction</label>
-                                <input type="checkbox" id="type-battleroyale">
-                                <label for="type-battleroyale">Battle royale</label>
-                                <input type="checkbox" id="type-extraction">
-                                <label for="type-extraction">Extraction shooter</label>
-                                <input type="checkbox" id="type-hero">
-                                <label for="type-hero">Hero shooter</label>
-
-
+                        <form class="eval-form">
+                                <fieldset class="eval-form-fieldset">
+                                        <legend class="eval-form-legend">Catégories de classement</legend>
+                                        <p> Les descripteurs de contenu sont appliqués en rapport avec les pictogrammes de cotation assignés et ne sont pas conçus comme des listes exhaustives de contenus. <a href="https://www.esrb.org/ratings-guide/fr/" class="info-icon" target="_blank"><img src="assets/icons/icon_info_black.png" height="15px"></a></p>
+                                        <input class="eval-form-input" type="checkbox" id="cat-everyone">
+                                        <label class="eval-form-label" for="cat-everyone">Tout public</label>
+                                        <input class="eval-form-input" type="checkbox" id="cat-10">
+                                        <label class="eval-form-label" for="cat-10">10 ans et +</label>
+                                        <input class="eval-form-input" type="checkbox" id="cat-13">
+                                        <label class="eval-form-label" for="cat-13">13 ans et +</label>
+                                        <input class="eval-form-input" type="checkbox" id="cat-17">
+                                        <label class="eval-form-label" for="cat-17">17 ans et +</label>
+                                        <input class="eval-form-input" type="checkbox" id="cat-18">
+                                        <label class="eval-form-label" for="cat-18">18 ans et +</label>
+                                        <input class="eval-form-input" type="checkbox" id="cat-pending">
+                                        <label class="eval-form-label" for="cat-pending">Cote en attente</label>
+                                </fieldset>
+                                <fieldset class="eval-form-fieldset">
+                                        <legend class="eval-form-legend">Support de jeu</legend>
+                                        <input class="eval-form-input" type="checkbox" id="support-pc">
+                                        <label class="eval-form-label" for="support-pc">PC</label>
+                                        <input class="eval-form-input" type="checkbox" id="support-ps">
+                                        <label class="eval-form-label" for="support-ps">PlayStation (PS4, PS5…)</label>
+                                        <input class="eval-form-input" type="checkbox" id="support-xbox">
+                                        <label class="eval-form-label" for="support-xbox">Xbox (One, Series X/S…)</label>
+                                        <input class="eval-form-input" type="checkbox" id="support-switch">
+                                        <label class="eval-form-label" for="support-switch">Nintendo Switch</label>
+                                        <input class="eval-form-input" type="checkbox" id="support-mobile">
+                                        <label class="eval-form-label" for="support-mobile">Mobile</label>
+                                        <input class="eval-form-input" type="checkbox" id="support-vr">
+                                        <label class="eval-form-label" for="support-vr">VR (Meta Quest, PS VR…)</label>
+                                </fieldset>
+                                <fieldset class="eval-form-fieldset">
+                                        <legend class="eval-form-legend">Mode de jeu</legend>
+                                        <input class="eval-form-input" type="checkbox" id="mode-solo">
+                                        <label class="eval-form-label" for="mode-solo">Seul</label>
+                                        <input class="eval-form-input" type="checkbox" id="mode-multi">
+                                        <label class="eval-form-label" for="mode-multi">Multijoueur</label>
+                                        <input class="eval-form-input" type="checkbox" id="mode-coop">
+                                        <label class="eval-form-label" for="mode-coop">Coopératif</label>
+                                        <input class="eval-form-input" type="checkbox" id="mode-online">
+                                        <label class="eval-form-label" for="mode-online">En ligne</label>
+                                        <input class="eval-form-input" type="checkbox" id="mode-offline">
+                                        <label class="eval-form-label" for="mode-offline">Hors ligne</label>
+                                </fieldset>
+                                <fieldset class="eval-form-fieldset">
+                                        <legend class="eval-form-legend">Type de FPS</legend>
+                                        <input class="eval-form-input" type="checkbox" id="type-tactique">
+                                        <label class="eval-form-label" for="type-tactique">FPS tactique</label>
+                                        <input class="eval-form-input" type="checkbox" id="type-arcade">
+                                        <label class="eval-form-label" for="type-arcade">FPS arcade</label>
+                                        <input class="eval-form-input" type="checkbox" id="type-realiste">
+                                        <label class="eval-form-label" for="type-realiste">FPS réaliste / simulation</label>
+                                        <input class="eval-form-input" type="checkbox" id="type-narratif">
+                                        <label class="eval-form-label" for="type-narratif">FPS narratif</label>
+                                        <input class="eval-form-input" type="checkbox" id="type-sf">
+                                        <label class="eval-form-label" for="type-sf">FPS de science-fiction</label>
+                                        <input class="eval-form-input" type="checkbox" id="type-battleroyale">
+                                        <label class="eval-form-label" for="type-battleroyale">Battle royale</label>
+                                        <input class="eval-form-input" type="checkbox" id="type-extraction">
+                                        <label class="eval-form-label" for="type-extraction">Extraction shooter</label>
+                                        <input class="eval-form-input" type="checkbox" id="type-hero">
+                                        <label class="eval-form-label" for="type-hero">Hero shooter</label>
+                                </fieldset>
+                                <p>
+                                        <a class="main-button">Afficher la liste</a>
+                                </p>
                         </form>
                 </section>
                 <section class="eval-result">
@@ -98,27 +105,23 @@
         </main>
 
         <footer>
-                <logo class="social-list">
-                        <a href="https://www.linkedin.com/edu/iut-de-bayonne-et-du-pays-basque-164183" target="_blank"
-                                title="Lien LinkedIn">
-                                <img src="assets/icons/icon_social_media_linkedin_white.png" alt="Logo LinkedIn"
-                                        height="30px">
+                <article class="social-list grid-left">
+                        <a href="https://www.linkedin.com/edu/iut-de-bayonne-et-du-pays-basque-164183" target="_blank" title="Lien LinkedIn">
+                                <img src="assets/icons/icon_social_media_linkedin_white.png" alt="Logo LinkedIn" height="30px">
                         </a>
-                        <a href="https://www.facebook.com/IUT.Bayonne.Pays.Basque/" target="_blank"
-                                title="Lien Facebook">
-                                <img src="assets/icons/icon_social_media_facebook_white.png" alt="Logo Facebook"
-                                        height="30px">
+                        <a href="https://www.facebook.com/IUT.Bayonne.Pays.Basque/" target="_blank" title="Lien Facebook">
+                                <img src="assets/icons/icon_social_media_facebook_white.png" alt="Logo Facebook" height="30px">
                         </a>
                         <a href="https://www.instagram.com/iutbayonne/" target="_blank" title="Lien Instagram">
-                                <img src="assets/icons/icon_social_media_instagram_white.png" alt="Logo Instagram"
-                                        height="30px">
+                                <img src="assets/icons/icon_social_media_instagram_white.png" alt="Logo Instagram" height="30px">
                         </a>
                         <a href="https://www.youtube.com/@iutbayonne" target="_blank" title="Lien YouTube">
                                 <img src="assets/icons/icon_social_media_youtube_white.png" alt="Logo YouTube" height="30px">
                         </a>
-                </logo>
-                <p>©2025 - Zone FPS - Tous droits réservés</p>
+                </article>
+                <article class="grid-center"><p>©2025 - Zone FPS - Tous droits réservés</p></article>
         </footer>
+
 </body>
 
 </html>
