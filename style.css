@@ -164,22 +164,27 @@ main {
         padding: 0;
         flex: 1;
 }
-.eval-main{
+
+.eval-main {
         position: relative;
         margin: 50px;
 }
-.eval-main h3{
+
+.eval-main h3 {
         font-size: xx-large;
         padding-top: 5px;
 }
-.eval-form-input{
-        padding:3px;
+
+.eval-form-input {
+        padding: 3px;
         margin: 0;
 }
-.eval-form-p{
+
+.eval-form-p {
         margin: 5px;
 }
-.eval-form{
+
+.eval-form {
         background-color: #cecece68;
         padding: 12px;
         border-radius: 10px;
@@ -187,26 +192,71 @@ main {
         flex-direction: column;
         gap: 15px;
 }
-.eval-form-fieldset{
+
+.eval-form-fieldset {
         padding: 15px;
 }
-.eval-form-legend{
-        color:#DF3F3F;
-        font-weight:bold; 
+
+.eval-form-legend {
+        color: #DF3F3F;
+        font-weight: bold;
 }
-.eval-result{
+
+.eval-result {
         display: none;
 }
-#eval-result:target{
+
+#eval-result:target {
         display: block;
 }
-.eval-list{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        width: 75vw;
-        gap: 20px;
+
+.eval-list {
         padding: 20px;
-        box-sizing: border-box;
+}
+
+table.eval-list {
+        width: 100%;
+}
+
+table th {
+        padding: 15px;
+}
+
+table td {
+        text-align-last: center;
+}
+
+table .eval-tab-name {
+        font-family: neuropolX;
+}
+
+table.eval-list td:nth-child(1),
+table.eval-list th:nth-child(1) {
+        width: 30%;
+}
+
+table.eval-list td:nth-child(2),
+table.eval-list th:nth-child(2) {
+        width: 25%;
+}
+
+table.eval-list td:nth-child(3),
+table.eval-list th:nth-child(3) {
+        width: 10%;
+}
+
+table.eval-list td:nth-child(4),
+table.eval-list td:nth-child(4) {
+        width: 20%;
+}
+
+table.eval-list td:nth-child(5),
+table.eval-list td:nth-child(5) {
+        width: 15%;
+}
+
+.eval-list img {
+        border-radius: 10px;
 }
 
 .no-margin {
@@ -222,12 +272,15 @@ main {
         padding-left: 10vw;
         padding-right: 10vw;
 }
-.empty-bottom{
+
+.empty-bottom {
         height: 5vh;
 }
-.empty-top{
+
+.empty-top {
         margin: 0;
 }
+
 /* Formulaire masqué par défaut */
 .formulaire {
         display: none;
