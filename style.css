@@ -225,6 +225,9 @@ main {
 .empty-bottom{
         height: 5vh;
 }
+.empty-top{
+        margin: 0;
+}
 /* Formulaire masqué par défaut */
 .formulaire {
         display: none;
@@ -305,6 +308,7 @@ main {
         border-radius: 10px;
         text-align: center;
         margin: 20px;
+        margin-top: 0;
 }
 
 .h2-index {
