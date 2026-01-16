@@ -20,6 +20,7 @@ body {
         margin: 0px;
         height: 100%;
 }
+
 header {
         display: flex;
         justify-content: space-between;
@@ -30,15 +31,18 @@ header {
         padding: 1rem;
         background-color: white;
 }
+
 header ul {
         list-style-type: none;
         display: flex;
         justify-content: space-around;
 }
+
 header li {
         padding: 5px;
 }
-.eval-form{
+
+.eval-form {
         background-color: #cecece68;
         padding: 12px;
         border-radius: 10px;
@@ -46,46 +50,53 @@ header li {
         flex-direction: column;
         gap: 15px;
 }
-.eval-form-fieldset{
+
+.eval-form-fieldset {
         padding: 20px;
 }
-.eval-form-legend{
-        color:#DF3F3F;
-        font-weight:bold 
+
+.eval-form-legend {
+        color: #DF3F3F;
+        font-weight: bold
 }
+
 aside {
         background-color: #253356;
         max-width: 20%;
-	height: 89vh;
-	position: fixed;
-	left: 0;
+        height: 89vh;
+        position: fixed;
+        left: 0;
         z-index: -1;
 }
+
 aside ul {
-	list-style-type: none;
-	padding: 10px;
-	margin: 10px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
+        list-style-type: none;
+        padding: 10px;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
 }
+
 aside .nav-button {
-	margin: 10px 0;
+        margin: 10px 0;
 }
-footer{
-	display: grid;
-	width: 100%;
-	grid-template-columns: auto 1fr;
+
+footer {
+        display: grid;
+        width: 100%;
+        grid-template-columns: auto 1fr;
         margin: 0;
-	padding: 8px 12px;
+        padding: 8px 12px;
         align-items: center;
-	position: fixed;
+        position: fixed;
         bottom: 0;
         z-index: 10;
-	color: white;
-	background-color: #253356;
+        color: white;
+        background-color: #253356;
         box-sizing: border-box;
 }
+
 .grid-left {
         grid-column: 1;
         justify-self: start;
@@ -93,24 +104,30 @@ footer{
         align-items: center;
         gap: 10px;
 }
+
 .grid-center {
         grid-column: 2;
         justify-self: center;
         display: flex;
         align-items: center;
 }
+
 footer a {
-	text-decoration: none;
+        text-decoration: none;
 }
-footer p{
+
+footer p {
         margin: 0;
 }
+
 footer img {
         display: block;
 }
-h4{
-	margin: 2px;
+
+h4 {
+        margin: 2px;
 }
+
 .nav-button {
         box-shadow: inset 0px 1px 0px 0px #ffffff;
         background: #ffffff;
@@ -126,6 +143,7 @@ h4{
         text-decoration: none;
         text-shadow: 0px 1px 0px #ffffff;
 }
+
 .main-button {
         background-color: #2f45b7;
         border-radius: 6px;
@@ -139,64 +157,100 @@ h4{
         padding: 10px 24px;
         text-decoration: none;
 }
-main{
+
+main {
         margin: 0;
         padding: 0;
         flex: 1;
 }
-.eval-main{
+
+.eval-main {
         max-height: 80vh;
 }
-.no-margin{
+
+.no-margin {
         margin: 0;
 }
-.full-height{
-	height: 81vh;
+
+.full-height {
+        height: 81vh;
 }
-.full-width{
+
+.full-width {
         margin: 0;
         padding-left: 10vw;
         padding-right: 10vw;
 }
+
 /* Formulaire masqué par défaut */
 .formulaire {
-    display: none;
-    margin-top: 20px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    background-color: #f5f5f5;
+        display: none;
+        margin-top: 20px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        background-color: #f5f5f5;
 }
 
 /* Affichage après clic */
 #formulaire:target {
-    display: block;
+        display: block;
 }
 
 #liste-jeu-area {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    width: 75vw;
-    gap: 20px;
-    padding: 20px;
-    box-sizing: border-box;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 75vw;
+        gap: 20px;
+        padding: 20px;
+        box-sizing: border-box;
 }
 
 #liste-jeu-area article {
-    background-color: #f5f5f5;
-    padding: 15px;
-    border-radius: 10px;
-    text-align: center;
+        background-color: #f5f5f5;
+        padding: 15px;
+        border-radius: 10px;
+        text-align: center;
 }
 
 #liste-jeu-area img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
 }
 
 .colonne2 {
-    margin-left: 20%;     /* même largeur que l’aside */
-    width: 80%;           /* prend tout l’espace restant */
-    padding: 20px;
-    box-sizing: border-box;
+        margin-left: 20%;
+        /* même largeur que l’aside */
+        width: 80%;
+        /* prend tout l’espace restant */
+        padding: 20px;
+        box-sizing: border-box;
+}
+
+#jeux-index-area {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        width: 100vw;
+        gap: 20px;
+        padding: 20px;
+        box-sizing: border-box;
+}
+
+#jeux-index-area article {
+        background-color: #f5f5f5;
+        padding: 15px;
+        border-radius: 10px;
+        text-align: center;
+}
+
+#jeux-index-area img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+}
+
+.index-area {
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
 }
