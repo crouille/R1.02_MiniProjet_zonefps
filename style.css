@@ -38,21 +38,6 @@ header ul {
 header li {
         padding: 5px;
 }
-.eval-form{
-        background-color: #cecece68;
-        padding: 12px;
-        border-radius: 10px;
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-}
-.eval-form-fieldset{
-        padding: 20px;
-}
-.eval-form-legend{
-        color:#DF3F3F;
-        font-weight:bold 
-}
 aside {
         background-color: #253356;
         max-width: 20%;
@@ -104,6 +89,7 @@ footer a {
 }
 footer p{
         margin: 0;
+        font-weight: bold;
 }
 footer img {
         display: block;
@@ -145,7 +131,48 @@ main{
         flex: 1;
 }
 .eval-main{
-        max-height: 80vh;
+        position: relative;
+        margin: 50px;
+}
+.eval-main h3{
+        font-size: xx-large;
+        padding-top: 5px;
+}
+.eval-form-input{
+        padding:3px;
+        margin: 0;
+}
+.eval-form-p{
+        margin: 5px;
+}
+.eval-form{
+        background-color: #cecece68;
+        padding: 12px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+}
+.eval-form-fieldset{
+        padding: 15px;
+}
+.eval-form-legend{
+        color:#DF3F3F;
+        font-weight:bold; 
+}
+.eval-result{
+        display: none;
+}
+#eval-result:target{
+        display: block;
+}
+.eval-list{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 75vw;
+        gap: 20px;
+        padding: 20px;
+        box-sizing: border-box;
 }
 .no-margin{
         margin: 0;
@@ -157,6 +184,9 @@ main{
         margin: 0;
         padding-left: 10vw;
         padding-right: 10vw;
+}
+.empty-bottom{
+        height: 5vh;
 }
 /* Formulaire masqué par défaut */
 .formulaire {

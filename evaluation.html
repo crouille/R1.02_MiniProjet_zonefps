@@ -25,7 +25,7 @@
                 </nav>
         </header>
 
-        <main class="eval-main full-width full-height">
+        <main class="eval-main full-width">
                 <section class="">
                         <h3 class="no-margin">Votre enfant vous demande un jeu FPS, mais vous n'y connaissez rien en jeu vidéo ? Cette page est faite pour vous !</h3>
                         <p>Voici un formulaire qui vous permet d'effectuer une recherche de jeux FPS et de pouvoir trier cette liste selon un critère de votre choix.</p>
@@ -33,7 +33,7 @@
                         <form class="eval-form">
                                 <fieldset class="eval-form-fieldset">
                                         <legend class="eval-form-legend">Catégories de classement</legend>
-                                        <p> Les descripteurs de contenu sont appliqués en rapport avec les pictogrammes de cotation assignés et ne sont pas conçus comme des listes exhaustives de contenus. <a href="https://www.esrb.org/ratings-guide/fr/" class="info-icon" target="_blank"><img src="assets/icons/icon_info_black.png" height="15px"></a></p>
+                                        <p class="eval-form-p"> Les descripteurs de contenu sont appliqués en rapport avec les pictogrammes de cotation assignés et ne sont pas conçus comme des listes exhaustives de contenus. <a href="https://www.esrb.org/ratings-guide/fr/" class="info-icon" target="_blank"><img src="assets/icons/icon_info_black.png" height="15px"></a></p>
                                         <input class="eval-form-input" type="checkbox" id="cat-everyone">
                                         <label class="eval-form-label" for="cat-everyone">Tout public</label>
                                         <input class="eval-form-input" type="checkbox" id="cat-10">
@@ -94,15 +94,19 @@
                                         <input class="eval-form-input" type="checkbox" id="type-hero">
                                         <label class="eval-form-label" for="type-hero">Hero shooter</label>
                                 </fieldset>
-                                <p>
-                                        <a class="main-button">Afficher la liste</a>
+                                <p class="eval-form-p">
+                                        <a href="#eval-result" class="main-button">Afficher la liste</a>
                                 </p>
                         </form>
                 </section>
-                <section class="eval-result">
-
+                <section id="eval-result" class="eval-result">
+                        <p>Test masqué/affiché</p>
                 </section>
         </main>
+
+        <article>
+                <p class="empty-bottom"></p>
+        </article>
 
         <footer>
                 <article class="social-list grid-left">
