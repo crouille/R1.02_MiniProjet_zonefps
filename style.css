@@ -97,6 +97,12 @@ footer {
         box-sizing: border-box;
 }
 
+footer ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+}
+
 .grid-left {
         grid-column: 1;
         justify-self: start;
@@ -110,12 +116,6 @@ footer {
         justify-self: center;
         display: flex;
         align-items: center;
-}
-
-footer ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
 }
 
 footer a {
