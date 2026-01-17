@@ -82,6 +82,11 @@ aside .nav-button {
         margin: 10px 0;
 }
 
+aside img {
+        width: 100%;
+        border-radius: 10px;
+}
+
 footer {
         display: grid;
         width: 100%;
