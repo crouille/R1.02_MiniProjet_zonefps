@@ -225,6 +225,14 @@ main {
         display: block;
 }
 
+.eval-violence-explanation {
+        display: none;
+}
+
+#eval-violence-explanation:target {
+        display: block;
+}
+
 .eval-list {
         padding: 20px;
 }
