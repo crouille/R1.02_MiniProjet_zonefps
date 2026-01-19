@@ -1,393 +1,297 @@
+/* =========================
+   POLICES PERSONNALISÉES
+   ========================= */
+
+/* Police principale utilisée sur le site */
 @font-face {
-        font-family: 'Bahnschrift';
-        src: url('assets/fonts/Bahnschrift.ttf') format('truetype'),
-                url('fonts/Bahnschrift.woff2') format('woff2'),
-                url('fonts/Bahnschrift.woff') format('woff');
-        font-weight: normal;
-        font-style: normal;
+    font-family: 'Bahnschrift';
+    src: url('assets/fonts/Bahnschrift.ttf') format('truetype'),
+        url('fonts/Bahnschrift.woff2') format('woff2'),
+        url('fonts/Bahnschrift.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
+/* Police décorative (titres / boutons) */
 @font-face {
-        font-family: 'NeuropolX';
-        src: url('assets/fonts/NeuropolX.otf') format('opentype');
-        font-weight: normal;
-        font-style: normal;
+    font-family: 'NeuropolX';
+    src: url('assets/fonts/NeuropolX.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
 }
+
+/* =========================
+   STRUCTURE GÉNÉRALE
+   ========================= */
 
 body {
-        font-family: 'Bahnschrift', 'Segoe UI', sans-serif;
-        padding: 0px;
-        margin: 0px;
-        height: 100%;
+    font-family: 'Bahnschrift', 'Segoe UI', sans-serif;
+    padding: 0;
+    margin: 0;
+    height: 100%;
 }
+
+/* =========================
+   HEADER / NAVIGATION HAUTE
+   ========================= */
 
 header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 5px;
-        height: 6vh;
-        max-height: 70px;
-        padding: 1rem;
-        background-color: white;
+    display: flex;
+    /* Alignement horizontal */
+    justify-content: space-between;
+    /* Espacement maximal */
+    align-items: center;
+    /* Centrage vertical */
+    height: 6vh;
+    max-height: 70px;
+    padding: 1rem;
+    background-color: white;
 }
 
+/* Liste du menu */
 header ul {
-        list-style-type: none;
-        display: flex;
-        justify-content: space-around;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
 }
 
+/* Élément du menu */
 header li {
-        padding: 5px;
+    padding: 5px;
 }
+
+/* =========================
+   FORMULAIRES D’ÉVALUATION
+   ========================= */
 
 .eval-form {
-        background-color: #cecece68;
-        padding: 12px;
-        border-radius: 10px;
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
+    background-color: #cecece68;
+    padding: 12px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
+/* Cadre du formulaire */
 .eval-form-fieldset {
-        padding: 20px;
+    padding: 20px;
 }
 
+/* Légende du formulaire */
 .eval-form-legend {
-        color: #DF3F3F;
-        font-weight: bold
+    color: #DF3F3F;
+    font-weight: bold;
 }
+
+/* =========================
+   ASIDE / MENU LATÉRAL
+   ========================= */
 
 aside {
-        background-color: #253356;
-        max-width: 20%;
-        height: 89vh;
-        position: fixed;
-        left: 0;
-        z-index: -1;
+    background-color: #253356;
+    max-width: 20%;
+    height: 89vh;
+    position: fixed;
+    left: 0;
+    z-index: -1;
 }
 
+/* Liste de navigation dans l’aside */
 aside ul {
-        list-style-type: none;
-        padding: 10px;
-        margin: 10px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
+    list-style-type: none;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
+/* Boutons du menu latéral */
 aside .nav-button {
-        margin: 10px 0;
+    margin: 10px 0;
 }
 
+/* Images du menu latéral */
 aside img {
-        width: 100%;
-        border-radius: 10px;
+    width: 100%;
+    border-radius: 10px;
 }
+
+/* =========================
+   FOOTER
+   ========================= */
 
 footer {
-        display: grid;
-        width: 100%;
-        grid-template-columns: auto 1fr;
-        margin: 0;
-        padding: 8px 12px;
-        align-items: center;
-        position: fixed;
-        bottom: 0;
-        z-index: 10;
-        color: white;
-        background-color: #253356;
-        box-sizing: border-box;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    width: 100%;
+    padding: 8px 12px;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    z-index: 10;
+    color: white;
+    background-color: #253356;
+    box-sizing: border-box;
 }
 
+/* Liste du footer */
 footer ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
+/* Partie gauche du footer */
 .grid-left {
-        grid-column: 1;
-        justify-self: start;
-        display: flex;
-        align-items: center;
-        gap: 10px;
+    grid-column: 1;
+    justify-self: start;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
+/* Partie centrale du footer */
 .grid-center {
-        grid-column: 2;
-        justify-self: center;
-        display: flex;
-        align-items: center;
+    grid-column: 2;
+    justify-self: center;
+    display: flex;
+    align-items: center;
 }
 
+/* Liens du footer */
 footer a {
-        text-decoration: none;
+    text-decoration: none;
 }
 
+/* Texte du footer */
 footer p {
-        margin: 0;
-        font-weight: bold;
+    margin: 0;
+    font-weight: bold;
 }
 
-footer img {
-        display: block;
-}
+/* =========================
+   TITRES & TEXTES
+   ========================= */
 
 h4 {
-        margin: 2px;
+    margin: 2px;
 }
 
+/* =========================
+   BOUTONS
+   ========================= */
+
+/* Bouton de navigation */
 .nav-button {
-        box-shadow: inset 0px 1px 0px 0px #ffffff;
-        background: #ffffff;
-        border-radius: 6px;
-        border: 0px solid #dcdcdc;
-        display: inline-block;
-        cursor: pointer;
-        color: #666666;
-        font-family: 'NeuropolX', 'Bahnschrift', 'Segoe UI', sans-serif;
-        font-size: 18px;
-        font-weight: bold;
-        padding: 10px 24px;
-        text-decoration: none;
-        text-shadow: 0px 1px 0px #ffffff;
+    box-shadow: inset 0px 1px 0px 0px #ffffff;
+    background: #ffffff;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #666666;
+    font-family: 'NeuropolX', 'Bahnschrift', 'Segoe UI', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 24px;
+    text-decoration: none;
 }
 
+/* Bouton principal */
 .main-button {
-        background-color: #2f45b7;
-        border-radius: 6px;
-        border: 1px solid #dcdcdc;
-        display: inline-block;
-        cursor: pointer;
-        color: #ffffff;
-        font-family: 'Bahnschrift', 'Segoe UI', sans-serif;
-        font-size: 18px;
-        font-weight: bold;
-        padding: 10px 24px;
-        text-decoration: none;
+    background-color: #2f45b7;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: 'Bahnschrift', 'Segoe UI', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 24px;
+    text-decoration: none;
 }
+
+/* =========================
+   CONTENU PRINCIPAL
+   ========================= */
 
 main {
-        margin: 0;
-        padding: 0;
-        flex: 1;
+    flex: 1;
 }
 
+/* Zone principale d’évaluation */
 .eval-main {
-        position: relative;
-        margin: 50px;
+    position: relative;
+    margin: 50px;
 }
 
+/* Titre d’évaluation */
 .eval-main h3 {
-        font-size: xx-large;
-        padding-top: 5px;
+    font-size: xx-large;
+    padding-top: 5px;
 }
 
-.eval-form-input {
-        padding: 3px;
-        margin: 0;
-}
+/* =========================
+   AFFICHAGE CONDITIONNEL
+   ========================= */
 
-.eval-form-p {
-        margin: 5px;
-}
-
-.eval-form {
-        background-color: #cecece68;
-        padding: 12px;
-        border-radius: 10px;
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-}
-
-.eval-vignette {
-        width: 100%;
-}
-
-.eval-form-fieldset {
-        padding: 15px;
-}
-
-.eval-form-legend {
-        color: #DF3F3F;
-        font-weight: bold;
-}
-
+/* Résultat masqué par défaut */
 .eval-result {
-        display: none;
+    display: none;
 }
 
+/* Affiché quand ciblé par l’URL */
 #eval-result:target {
-        display: block;
+    display: block;
 }
 
-.eval-violence-explanation {
-        display: none;
-}
-
-#eval-violence-explanation:target {
-        display: block;
-}
-
-.eval-list {
-        padding: 20px;
-}
+/* =========================
+   TABLEAUX
+   ========================= */
 
 table.eval-list {
-        width: 100%;
+    width: 100%;
 }
 
+/* En-têtes */
 table th {
-        padding: 15px;
+    padding: 15px;
 }
 
+/* Cellules */
 table td {
-        text-align-last: center;
+    text-align-last: center;
 }
 
-table .eval-tab-name {
-        font-family: neuropolX;
-}
-
-table.eval-list td:nth-child(1),
-table.eval-list th:nth-child(1) {
-        width: 30%;
-}
-
-table.eval-list td:nth-child(2),
-table.eval-list th:nth-child(2) {
-        width: 25%;
-}
-
-table.eval-list td:nth-child(3),
-table.eval-list th:nth-child(3) {
-        width: 10%;
-}
-
-table.eval-list td:nth-child(4),
-table.eval-list td:nth-child(4) {
-        width: 20%;
-}
-
-table.eval-list td:nth-child(5),
-table.eval-list td:nth-child(5) {
-        width: 15%;
-}
-
-.eval-list img {
-        border-radius: 10px;
-}
+/* =========================
+   UTILITAIRES
+   ========================= */
 
 .no-margin {
-        margin: 0;
+    margin: 0;
 }
 
 .full-height {
-        height: 81vh;
+    height: 81vh;
 }
 
 .full-width {
-        margin: 0;
-        padding-left: 10vw;
-        padding-right: 10vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
 }
 
-.empty-bottom {
-        height: 5vh;
-}
+/* =========================
+   FORMULAIRE MASQUÉ
+   ========================= */
 
-.empty-top {
-        margin: 0;
-}
-
-/* Formulaire masqué par défaut */
 .formulaire {
-        display: none;
-        margin-top: 20px;
-        padding: 20px;
-        border: 1px solid #ccc;
-        background-color: #f5f5f5;
+    display: none;
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f5f5f5;
 }
 
 /* Affichage après clic */
 #formulaire:target {
-        display: block;
-}
-
-#liste-jeu-area {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        width: 75vw;
-        gap: 20px;
-        padding: 20px;
-        box-sizing: border-box;
-}
-
-#liste-jeu-area article {
-        background-color: #f5f5f5;
-        padding: 15px;
-        border-radius: 10px;
-        text-align: center;
-}
-
-#liste-jeu-area img {
-        width: 100%;
-        height: auto;
-        border-radius: 8px;
-}
-
-.colonne2 {
-        margin-left: 20%;
-        /* même largeur que l’aside */
-        width: 80%;
-        /* prend tout l’espace restant */
-        padding: 20px;
-        box-sizing: border-box;
-}
-
-#jeux-index-area {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        width: 100vw;
-        gap: 15px;
-        padding: 20px;
-        box-sizing: border-box;
-}
-
-#jeux-index-area article {
-        background-color: #f5f5f5;
-        padding: 15px;
-        border-radius: 10px;
-        text-align: center;
-}
-
-#jeux-index-area img {
-        width: 100%;
-        height: auto;
-        border-radius: 8px;
-}
-
-.index-area {
-        width: 100%;
-        box-sizing: border-box;
-        background-color: black;
-        margin-top: 20px;
-}
-
-.jeu-a-la-une {
-        background-color: #f5f5f5;
-        padding: 15px;
-        border-radius: 10px;
-        text-align: center;
-        margin: 20px;
-        margin-top: 0;
-}
-
-.h2-index {
-        color: white;
-        font-size: 30px
+    display: block;
 }

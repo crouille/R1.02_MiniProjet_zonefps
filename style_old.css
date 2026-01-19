@@ -1,0 +1,393 @@
+@font-face {
+        font-family: 'Bahnschrift';
+        src: url('assets/fonts/Bahnschrift.ttf') format('truetype'),
+                url('fonts/Bahnschrift.woff2') format('woff2'),
+                url('fonts/Bahnschrift.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+}
+
+@font-face {
+        font-family: 'NeuropolX';
+        src: url('assets/fonts/NeuropolX.otf') format('opentype');
+        font-weight: normal;
+        font-style: normal;
+}
+
+body {
+        font-family: 'Bahnschrift', 'Segoe UI', sans-serif;
+        padding: 0px;
+        margin: 0px;
+        height: 100%;
+}
+
+header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px;
+        height: 6vh;
+        max-height: 70px;
+        padding: 1rem;
+        background-color: white;
+}
+
+header ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-around;
+}
+
+header li {
+        padding: 5px;
+}
+
+.eval-form {
+        background-color: #cecece68;
+        padding: 12px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+}
+
+.eval-form-fieldset {
+        padding: 20px;
+}
+
+.eval-form-legend {
+        color: #DF3F3F;
+        font-weight: bold
+}
+
+aside {
+        background-color: #253356;
+        max-width: 20%;
+        height: 89vh;
+        position: fixed;
+        left: 0;
+        z-index: -1;
+}
+
+aside ul {
+        list-style-type: none;
+        padding: 10px;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+}
+
+aside .nav-button {
+        margin: 10px 0;
+}
+
+aside img {
+        width: 100%;
+        border-radius: 10px;
+}
+
+footer {
+        display: grid;
+        width: 100%;
+        grid-template-columns: auto 1fr;
+        margin: 0;
+        padding: 8px 12px;
+        align-items: center;
+        position: fixed;
+        bottom: 0;
+        z-index: 10;
+        color: white;
+        background-color: #253356;
+        box-sizing: border-box;
+}
+
+footer ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+}
+
+.grid-left {
+        grid-column: 1;
+        justify-self: start;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+}
+
+.grid-center {
+        grid-column: 2;
+        justify-self: center;
+        display: flex;
+        align-items: center;
+}
+
+footer a {
+        text-decoration: none;
+}
+
+footer p {
+        margin: 0;
+        font-weight: bold;
+}
+
+footer img {
+        display: block;
+}
+
+h4 {
+        margin: 2px;
+}
+
+.nav-button {
+        box-shadow: inset 0px 1px 0px 0px #ffffff;
+        background: #ffffff;
+        border-radius: 6px;
+        border: 0px solid #dcdcdc;
+        display: inline-block;
+        cursor: pointer;
+        color: #666666;
+        font-family: 'NeuropolX', 'Bahnschrift', 'Segoe UI', sans-serif;
+        font-size: 18px;
+        font-weight: bold;
+        padding: 10px 24px;
+        text-decoration: none;
+        text-shadow: 0px 1px 0px #ffffff;
+}
+
+.main-button {
+        background-color: #2f45b7;
+        border-radius: 6px;
+        border: 1px solid #dcdcdc;
+        display: inline-block;
+        cursor: pointer;
+        color: #ffffff;
+        font-family: 'Bahnschrift', 'Segoe UI', sans-serif;
+        font-size: 18px;
+        font-weight: bold;
+        padding: 10px 24px;
+        text-decoration: none;
+}
+
+main {
+        margin: 0;
+        padding: 0;
+        flex: 1;
+}
+
+.eval-main {
+        position: relative;
+        margin: 50px;
+}
+
+.eval-main h3 {
+        font-size: xx-large;
+        padding-top: 5px;
+}
+
+.eval-form-input {
+        padding: 3px;
+        margin: 0;
+}
+
+.eval-form-p {
+        margin: 5px;
+}
+
+.eval-form {
+        background-color: #cecece68;
+        padding: 12px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+}
+
+.eval-vignette {
+        width: 100%;
+}
+
+.eval-form-fieldset {
+        padding: 15px;
+}
+
+.eval-form-legend {
+        color: #DF3F3F;
+        font-weight: bold;
+}
+
+.eval-result {
+        display: none;
+}
+
+#eval-result:target {
+        display: block;
+}
+
+.eval-violence-explanation {
+        display: none;
+}
+
+#eval-violence-explanation:target {
+        display: block;
+}
+
+.eval-list {
+        padding: 20px;
+}
+
+table.eval-list {
+        width: 100%;
+}
+
+table th {
+        padding: 15px;
+}
+
+table td {
+        text-align-last: center;
+}
+
+table .eval-tab-name {
+        font-family: neuropolX;
+}
+
+table.eval-list td:nth-child(1),
+table.eval-list th:nth-child(1) {
+        width: 30%;
+}
+
+table.eval-list td:nth-child(2),
+table.eval-list th:nth-child(2) {
+        width: 25%;
+}
+
+table.eval-list td:nth-child(3),
+table.eval-list th:nth-child(3) {
+        width: 10%;
+}
+
+table.eval-list td:nth-child(4),
+table.eval-list td:nth-child(4) {
+        width: 20%;
+}
+
+table.eval-list td:nth-child(5),
+table.eval-list td:nth-child(5) {
+        width: 15%;
+}
+
+.eval-list img {
+        border-radius: 10px;
+}
+
+.no-margin {
+        margin: 0;
+}
+
+.full-height {
+        height: 81vh;
+}
+
+.full-width {
+        margin: 0;
+        padding-left: 10vw;
+        padding-right: 10vw;
+}
+
+.empty-bottom {
+        height: 5vh;
+}
+
+.empty-top {
+        margin: 0;
+}
+
+/* Formulaire masqué par défaut */
+.formulaire {
+        display: none;
+        margin-top: 20px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        background-color: #f5f5f5;
+}
+
+/* Affichage après clic */
+#formulaire:target {
+        display: block;
+}
+
+#liste-jeu-area {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 75vw;
+        gap: 20px;
+        padding: 20px;
+        box-sizing: border-box;
+}
+
+#liste-jeu-area article {
+        background-color: #f5f5f5;
+        padding: 15px;
+        border-radius: 10px;
+        text-align: center;
+}
+
+#liste-jeu-area img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+}
+
+.colonne2 {
+        margin-left: 20%;
+        /* même largeur que l’aside */
+        width: 80%;
+        /* prend tout l’espace restant */
+        padding: 20px;
+        box-sizing: border-box;
+}
+
+#jeux-index-area {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        width: 100vw;
+        gap: 15px;
+        padding: 20px;
+        box-sizing: border-box;
+}
+
+#jeux-index-area article {
+        background-color: #f5f5f5;
+        padding: 15px;
+        border-radius: 10px;
+        text-align: center;
+}
+
+#jeux-index-area img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+}
+
+.index-area {
+        width: 100%;
+        box-sizing: border-box;
+        background-color: black;
+        margin-top: 20px;
+}
+
+.jeu-a-la-une {
+        background-color: #f5f5f5;
+        padding: 15px;
+        border-radius: 10px;
+        text-align: center;
+        margin: 20px;
+        margin-top: 0;
+}
+
+.h2-index {
+        color: white;
+        font-size: 30px
+}
